@@ -188,21 +188,22 @@ The dashboard features:
 **a. Daily Complaint Trend**
 - Continuous line chart showing long-term complaints
 
-markdown
+
 ![monthly_complaints](Images/Line_chart.jpeg)
 
 **b. Top Offences Bar Chart**
 - Focuses on high-volume crime categories
 - Helps prioritise policing and resource allocation
 
-markdown
+
 ![Images/Top Offences.jpg]
 
 **c. Hourly-Day Heatmap**
 - Reveals "crime activity hotspots" by time of day
 - Useful for shift planning and operational readiness
-markdown
+
 Darker colours indicate peak complaint activity
+
 ![Images/Complaint_heatmap.jpg]
 
 **d. Reporting Lag Plot**
@@ -211,14 +212,14 @@ This analytical visualisation shows:
 - High vs. low complaints volume
 - Borough-offence pairings
 Colour-coded quandrants reveal operational risk zones. 
-markdown
+
 ![Images/Reporting_time.jpg]
 
 **e. Victim Demographic Profile**
 - Age group distribution
 - Gender distribution
 - Helps identify vulnerable population
-markdown
+
 ![Images/Victim_profile.jpg]
 
 
