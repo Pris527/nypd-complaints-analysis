@@ -195,8 +195,7 @@ The dashboard features:
 - Focuses on high-volume crime categories
 - Helps prioritise policing and resource allocation
 
-
-![Images/Top Offences.jpg]
+![Top Offences](images/TopOffences.jpg)
 
 **c. Hourly-Day Heatmap**
 - Reveals "crime activity hotspots" by time of day
@@ -204,7 +203,7 @@ The dashboard features:
 
 Darker colours indicate peak complaint activity
 
-![Images/Complaint_heatmap.jpg]
+![Complaint Heatmap](images/complaint_heatmap.jpg)
 
 **d. Reporting Lag Plot**
 This analytical visualisation shows:
@@ -213,14 +212,14 @@ This analytical visualisation shows:
 - Borough-offence pairings
 Colour-coded quandrants reveal operational risk zones. 
 
-![Images/Reporting_time.jpg]
+![Reporting_time](images/Reporting_time.jpg)
 
 **e. Victim Demographic Profile**
 - Age group distribution
 - Gender distribution
 - Helps identify vulnerable population
 
-![Images/Victim_profile.jpg]
+![Victim_profile](images/Victim_profile.jpg)
 
 
 
