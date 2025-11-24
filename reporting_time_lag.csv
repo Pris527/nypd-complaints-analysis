@@ -1,0 +1,221 @@
+borough,offense_description,median_lag_minutes,complaint_count
+(Null),Grand Larceny Of Motor Vehicle,780,91
+(Null),Theft-Fraud,26640,62
+(Null),Off. Agnst Pub Ord Sensblty &,3300,150
+(Null),Grand Larceny,4740,253
+(Null),Assault 3 & Related Offenses,1320,115
+(Null),Burglary,780,78
+(Null),Harrassment 2,1950,208
+(Null),Petit Larceny,4768,3131
+(Null),Felony Assault,1020,53
+(Null),Criminal Mischief & Related Of,615,208
+Bronx,Unauthorized Use Of A Vehicle,11880,2835
+Bronx,Intoxicated & Impaired Driving,86,2460
+Bronx,Offenses Involving Fraud,1830,524
+Bronx,Theft Of Services,180590,611
+Bronx,Rape,23100,4520
+Bronx,Off. Agnst Pub Ord Sensblty &,2879,51337
+Bronx,Robbery,382,13624
+Bronx,Kidnapping & Related Offenses,1860,351
+Bronx,Offenses Against Public Admini,3075,12646
+Bronx,Grand Larceny Of Motor Vehicle,600,30887
+Bronx,Forgery,61140,3722
+Bronx,Felony Assault,675,22482
+Bronx,Criminal Trespass,90,2223
+Bronx,(Null),4615,1090
+Bronx,Frauds,23880,4645
+Bronx,Other State Laws (Non Penal La,540,367
+Bronx,Sex Crimes,11880,12736
+Bronx,Other State Laws (Non Penal Law),1997,72
+Bronx,Miscellaneous Penal Law,3420,11415
+Bronx,Dangerous Drugs,50,10204
+Bronx,Petit Larceny,1380,132198
+Bronx,Criminal Mischief & Related Of,480,87873
+Bronx,Offenses Related To Children,80,144
+Bronx,Possession Of Stolen Property,1305,1194
+Bronx,Harrassment 2,1871,82543
+Bronx,Dangerous Weapons,55,4437
+Bronx,Other Offenses Related To Theft,4980,75
+Bronx,Theft-Fraud,35160,13131
+Bronx,Burglary,810,26616
+Bronx,Gambling,55,80
+Bronx,Alcoholic Beverage Control Law,75,113
+Bronx,Other State Laws,20080,93
+Bronx,Offenses Against The Person,711,1136
+Bronx,Nys Laws-Unclassified Felony,13680,548
+Bronx,Agriculture & Mrkts Law-Unclassified,1690,143
+Bronx,Arson,3270,4036
+Bronx,Administrative Code,1860,1619
+Bronx,Child Abandonment/Non Support,540,64
+Bronx,Other Offenses Related To Thef,1770,447
+Bronx,Petit Larceny Of Motor Vehicle,1260,223
+Bronx,Offenses Against Public Safety,92,61
+Bronx,Prostitution & Related Offenses,175,201
+Bronx,Assault 3 & Related Offenses,630,48675
+Bronx,Grand Larceny,3880,69804
+Bronx,Vehicle And Traffic Laws,195,3467
+Brooklyn,Rape,28920,5940
+Brooklyn,Other State Laws (Non Penal Law),2340,92
+Brooklyn,Miscellaneous Penal Law,1800,24919
+Brooklyn,Administrative Code,2340,2902
+Brooklyn,Petit Larceny Of Motor Vehicle,720,555
+Brooklyn,Prostitution & Related Offenses,15839,135
+Brooklyn,Forgery,2160,4273
+Brooklyn,Felony Assault,360,23365
+Brooklyn,Criminal Mischief & Related Of,660,129372
+Brooklyn,Agriculture & Mrkts Law-Unclassified,1980,181
+Brooklyn,Intoxicated & Impaired Driving,60,4426
+Brooklyn,Vehicle And Traffic Laws,240,4328
+Brooklyn,Offenses Against Public Safety,110,54
+Brooklyn,Offenses Involving Fraud,1290,413
+Brooklyn,Other State Laws (Non Penal La,3900,348
+Brooklyn,Endan Welfare Incomp,4860,68
+Brooklyn,Harrassment 2,1860,107507
+Brooklyn,Grand Larceny Of Motor Vehicle,630,38097
+Brooklyn,Alcoholic Beverage Control Law,62,84
+Brooklyn,Possession Of Stolen Property,735,1782
+Brooklyn,Nys Laws-Unclassified Felony,5520,607
+Brooklyn,Offenses Related To Children,180,80
+Brooklyn,Other Offenses Related To Thef,895,780
+Brooklyn,Dangerous Drugs,80,13508
+Brooklyn,Frauds,26280,8996
+Brooklyn,Criminal Trespass,525,3012
+Brooklyn,Grand Larceny,6180,129989
+Brooklyn,Gambling,90,145
+Brooklyn,Kidnapping & Related Offenses,1950,512
+Brooklyn,Other Offenses Related To Theft,489,61
+Brooklyn,Other State Laws,10215,94
+Brooklyn,Unauthorized Use Of A Vehicle,13680,4899
+Brooklyn,Off. Agnst Pub Ord Sensblty &,3390,71597
+Brooklyn,Dangerous Weapons,72,5931
+Brooklyn,Sex Crimes,11400,20507
+Brooklyn,Robbery,315,16441
+Brooklyn,Offenses Against The Person,1980,1587
+Brooklyn,Arson,7775,4865
+Brooklyn,Theft-Fraud,34559,23626
+Brooklyn,Burglary,900,46990
+Brooklyn,Burglar's Tools,60,98
+Brooklyn,Assault 3 & Related Offenses,570,56065
+Brooklyn,Offenses Against Public Admini,450,6092
+Brooklyn,Petit Larceny,1860,212628
+Brooklyn,(Null),3882,1086
+Manhattan,Theft Of Services,42238,503
+Manhattan,Unauthorized Use Of A Vehicle,26539,1943
+Manhattan,Fraudulent Accosting,2250,646
+Manhattan,Arson,4315,2219
+Manhattan,Offenses Against Public Safety,25,65
+Manhattan,Criminal Trespass,165,3384
+Manhattan,Other State Laws (Non Penal La,73979,610
+Manhattan,Felony Assault,396,13401
+Manhattan,Off. Agnst Pub Ord Sensblty &,4631,52505
+Manhattan,Theft-Fraud,18510,22534
+Manhattan,Administrative Code,3300,755
+Manhattan,Sex Crimes,7500,13416
+Manhattan,Kidnapping & Related Offenses,2250,271
+Manhattan,Vehicle And Traffic Laws,420,2916
+Manhattan,Possession Of Stolen Property,510,1323
+Manhattan,Other Offenses Related To Thef,1215,1025
+Manhattan,Burglary,970,30645
+Manhattan,Agriculture & Mrkts Law-Unclassified,2204,110
+Manhattan,Offenses Against The Person,2160,1215
+Manhattan,Prostitution & Related Offenses,180,77
+Manhattan,Offenses Against Public Admini,1470,8152
+Manhattan,Gambling,45,86
+Manhattan,Grand Larceny,4110,166834
+Manhattan,Other State Laws (Non Penal Law),900,60
+Manhattan,Offenses Involving Fraud,1440,600
+Manhattan,Dangerous Weapons,57,2952
+Manhattan,Rape,15720,3926
+Manhattan,(Null),4440,1273
+Manhattan,Grand Larceny Of Motor Vehicle,900,13509
+Manhattan,Forgery,9183,3714
+Manhattan,Petit Larceny Of Motor Vehicle,930,266
+Manhattan,Offenses Related To Children,1980,54
+Manhattan,Intoxicated & Impaired Driving,65,2182
+Manhattan,Frauds,14399,9585
+Manhattan,Miscellaneous Penal Law,2160,10315
+Manhattan,Assault 3 & Related Offenses,740,37364
+Manhattan,Petit Larceny,2040,179104
+Manhattan,Other State Laws,49500,225
+Manhattan,Nys Laws-Unclassified Felony,34020,1790
+Manhattan,Other Offenses Related To Theft,1440,147
+Manhattan,Dangerous Drugs,55,6967
+Manhattan,Harrassment 2,2280,79060
+Manhattan,Robbery,330,10499
+Manhattan,Burglar's Tools,120,116
+Manhattan,Criminal Mischief & Related Of,1200,78124
+Queens,Criminal Mischief & Related Of,720,106369
+Queens,Offenses Against Public Admini,1908,5667
+Queens,Forgery,19260,3664
+Queens,Intoxicated & Impaired Driving,80,2940
+Queens,Other State Laws (Non Penal Law),4320,73
+Queens,Grand Larceny Of Motor Vehicle,540,37805
+Queens,Criminal Trespass,4980,3524
+Queens,Prostitution & Related Offenses,9180,59
+Queens,Dangerous Weapons,135,3902
+Queens,Robbery,310,10360
+Queens,Frauds,22140,6885
+Queens,Dangerous Drugs,92,3142
+Queens,Petit Larceny Of Motor Vehicle,1020,587
+Queens,Felony Assault,490,15158
+Queens,Kidnapping & Related Offenses,2160,270
+Queens,(Null),5225,1140
+Queens,Theft-Fraud,30240,16971
+Queens,Harrassment 2,1860,80792
+Queens,Sex Crimes,14399,14357
+Queens,Miscellaneous Penal Law,1995,16362
+Queens,Burglary,780,33055
+Queens,Other Offenses Related To Thef,3560,724
+Queens,Other State Laws (Non Penal La,3270,220
+Queens,Arson,6417,2580
+Queens,Burglar's Tools,70,53
+Queens,Nys Laws-Unclassified Felony,30585,379
+Queens,Vehicle And Traffic Laws,3960,5073
+Queens,Off. Agnst Pub Ord Sensblty &,3660,50237
+Queens,Rape,41040,4679
+Queens,Other State Laws,18030,52
+Queens,Agriculture & Mrkts Law-Unclassified,3341,93
+Queens,Possession Of Stolen Property,4962,1565
+Queens,Other Offenses Related To Theft,265,59
+Queens,Administrative Code,2160,2240
+Queens,Offenses Related To Children,60,214
+Queens,Offenses Against The Person,1455,846
+Queens,Assault 3 & Related Offenses,660,39227
+Queens,Grand Larceny,6480,100423
+Queens,Petit Larceny,1860,158204
+Queens,Fraudulent Accosting,27810,76
+Queens,Theft Of Services,108476,130
+Queens,Offenses Involving Fraud,9540,393
+Queens,Unauthorized Use Of A Vehicle,27960,5755
+Staten Island,Other Offenses Related To Thef,2100,118
+Staten Island,Criminal Mischief & Related Of,1020,28405
+Staten Island,Theft-Fraud,19650,5418
+Staten Island,(Null),8940,201
+Staten Island,Offenses Involving Fraud,7680,112
+Staten Island,Criminal Trespass,840,620
+Staten Island,Nys Laws-Unclassified Felony,2025,98
+Staten Island,Offenses Against Public Admini,1620,2269
+Staten Island,Miscellaneous Penal Law,2120,3526
+Staten Island,Other State Laws (Non Penal La,8040,51
+Staten Island,Arson,7722,785
+Staten Island,Burglary,660,4793
+Staten Island,Unauthorized Use Of A Vehicle,5627,1061
+Staten Island,Felony Assault,540,2386
+Staten Island,Intoxicated & Impaired Driving,50,1216
+Staten Island,Assault 3 & Related Offenses,780,8280
+Staten Island,Rape,49740,757
+Staten Island,Robbery,228,1009
+Staten Island,Possession Of Stolen Property,5040,383
+Staten Island,Vehicle And Traffic Laws,201,399
+Staten Island,Frauds,18000,3701
+Staten Island,Grand Larceny Of Motor Vehicle,390,3819
+Staten Island,Petit Larceny,2160,32403
+Staten Island,Dangerous Drugs,45,1217
+Staten Island,Administrative Code,2280,332
+Staten Island,Offenses Against The Person,2160,241
+Staten Island,Off. Agnst Pub Ord Sensblty &,3420,15428
+Staten Island,Dangerous Weapons,55,614
+Staten Island,Grand Larceny,6480,15080
+Staten Island,Forgery,21030,558
+Staten Island,Harrassment 2,1870,23083
+Staten Island,Sex Crimes,19200,2574

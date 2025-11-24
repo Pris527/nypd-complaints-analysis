@@ -1,0 +1,1008 @@
+borough,complaint_dayofweek,complaint_hour,complaint_count,pct_of_all_high_severity
+(Null),1,9,2,0.0
+(Null),1,10,2,0.0
+(Null),1,7,3,0.0
+(Null),1,6,3,0.0
+(Null),1,8,4,0.0
+(Null),1,11,5,0.0
+(Null),1,19,5,0.0
+(Null),1,4,5,0.0
+(Null),1,5,6,0.0
+(Null),1,13,7,0.0
+(Null),1,3,7,0.0
+(Null),1,22,7,0.0
+(Null),1,15,7,0.0
+(Null),1,0,8,0.0
+(Null),1,16,8,0.0
+(Null),1,17,8,0.0
+(Null),1,12,8,0.0
+(Null),1,21,8,0.0
+(Null),1,23,9,0.0
+(Null),1,1,9,0.0
+(Null),1,14,9,0.0
+(Null),1,20,9,0.0
+(Null),1,18,10,0.0
+(Null),1,2,18,0.0
+Staten Island,1,6,201,0.01
+Staten Island,1,7,213,0.01
+Staten Island,1,5,278,0.01
+Staten Island,1,9,367,0.01
+Staten Island,1,8,375,0.01
+Staten Island,1,11,396,0.01
+Staten Island,1,4,405,0.01
+Staten Island,1,10,429,0.01
+Staten Island,1,13,497,0.02
+Staten Island,1,14,503,0.02
+Staten Island,1,2,540,0.02
+Staten Island,1,3,552,0.02
+Staten Island,1,1,575,0.02
+Staten Island,1,23,609,0.02
+Staten Island,1,16,609,0.02
+Staten Island,1,17,613,0.02
+Staten Island,1,15,631,0.02
+Staten Island,1,19,633,0.02
+Staten Island,1,18,649,0.02
+Staten Island,1,21,659,0.02
+Staten Island,1,20,687,0.02
+Staten Island,1,22,692,0.02
+Staten Island,1,12,703,0.02
+Staten Island,1,0,841,0.03
+Bronx,1,7,1364,0.05
+Manhattan,1,7,1374,0.05
+Queens,1,7,1474,0.05
+Manhattan,1,6,1599,0.05
+Queens,1,6,1629,0.05
+Bronx,1,6,1681,0.06
+Bronx,1,8,1759,0.06
+Manhattan,1,8,1896,0.06
+Bronx,1,9,1955,0.07
+Brooklyn,1,7,1962,0.07
+Queens,1,8,2001,0.07
+Bronx,1,10,2152,0.07
+Bronx,1,11,2226,0.07
+Bronx,1,5,2230,0.08
+Brooklyn,1,6,2248,0.08
+Manhattan,1,5,2322,0.08
+Queens,1,10,2363,0.08
+Queens,1,9,2386,0.08
+Manhattan,1,9,2389,0.08
+Queens,1,5,2427,0.08
+Manhattan,1,10,2458,0.08
+Queens,1,11,2500,0.08
+Bronx,1,13,2692,0.09
+Manhattan,1,11,2693,0.09
+Queens,1,13,2780,0.09
+Brooklyn,1,8,2813,0.09
+Bronx,1,14,3052,0.1
+Bronx,1,12,3082,0.1
+Queens,1,14,3102,0.1
+Brooklyn,1,9,3141,0.11
+Brooklyn,1,5,3222,0.11
+Bronx,1,4,3324,0.11
+Bronx,1,15,3461,0.12
+Brooklyn,1,10,3519,0.12
+Queens,1,15,3521,0.12
+Manhattan,1,23,3528,0.12
+Manhattan,1,22,3533,0.12
+Bronx,1,16,3560,0.12
+Bronx,1,23,3565,0.12
+Bronx,1,3,3582,0.12
+Manhattan,1,13,3613,0.12
+Brooklyn,1,11,3622,0.12
+Bronx,1,17,3640,0.12
+Queens,1,16,3724,0.13
+Bronx,1,2,3764,0.13
+Manhattan,1,21,3775,0.13
+Queens,1,17,3796,0.13
+Bronx,1,22,3824,0.13
+Queens,1,12,3880,0.13
+Bronx,1,19,3888,0.13
+Bronx,1,18,3926,0.13
+Bronx,1,21,3929,0.13
+Queens,1,23,3986,0.13
+Bronx,1,1,4080,0.14
+Queens,1,18,4081,0.14
+Manhattan,1,14,4086,0.14
+Queens,1,4,4097,0.14
+Bronx,1,20,4099,0.14
+Queens,1,3,4111,0.14
+Manhattan,1,20,4111,0.14
+Queens,1,19,4132,0.14
+Brooklyn,1,13,4135,0.14
+Queens,1,2,4151,0.14
+Queens,1,21,4219,0.14
+Manhattan,1,4,4224,0.14
+Manhattan,1,19,4228,0.14
+Manhattan,1,12,4254,0.14
+Queens,1,20,4272,0.14
+Queens,1,22,4405,0.15
+Queens,1,1,4450,0.15
+Brooklyn,1,4,4567,0.15
+Brooklyn,1,14,4621,0.16
+Manhattan,1,15,4668,0.16
+Manhattan,1,18,4672,0.16
+Manhattan,1,16,4744,0.16
+Bronx,1,0,4934,0.17
+Manhattan,1,17,4956,0.17
+Brooklyn,1,3,5138,0.17
+Manhattan,1,3,5195,0.17
+Brooklyn,1,15,5247,0.18
+Brooklyn,1,23,5275,0.18
+Brooklyn,1,16,5333,0.18
+Brooklyn,1,12,5335,0.18
+Queens,1,0,5431,0.18
+Brooklyn,1,2,5462,0.18
+Manhattan,1,2,5593,0.19
+Brooklyn,1,22,5666,0.19
+Brooklyn,1,21,5674,0.19
+Brooklyn,1,19,5711,0.19
+Brooklyn,1,17,5723,0.19
+Manhattan,1,1,5782,0.19
+Brooklyn,1,18,5907,0.2
+Brooklyn,1,20,6030,0.2
+Manhattan,1,0,6136,0.21
+Brooklyn,1,1,6218,0.21
+Brooklyn,1,0,8169,0.27
+(Null),2,6,3,0.0
+(Null),2,5,4,0.0
+(Null),2,1,5,0.0
+(Null),2,2,5,0.0
+(Null),2,3,5,0.0
+(Null),2,4,5,0.0
+(Null),2,11,6,0.0
+(Null),2,7,8,0.0
+(Null),2,8,10,0.0
+(Null),2,10,13,0.0
+(Null),2,22,14,0.0
+(Null),2,23,14,0.0
+(Null),2,13,14,0.0
+(Null),2,20,15,0.0
+(Null),2,9,16,0.0
+(Null),2,0,18,0.0
+(Null),2,14,19,0.0
+(Null),2,21,20,0.0
+(Null),2,17,20,0.0
+(Null),2,15,21,0.0
+(Null),2,12,22,0.0
+(Null),2,19,22,0.0
+(Null),2,16,26,0.0
+(Null),2,18,27,0.0
+Staten Island,2,5,201,0.01
+Staten Island,2,6,218,0.01
+Staten Island,2,4,253,0.01
+Staten Island,2,3,295,0.01
+Staten Island,2,7,344,0.01
+Staten Island,2,2,358,0.01
+Staten Island,2,1,472,0.02
+Staten Island,2,11,513,0.02
+Staten Island,2,10,594,0.02
+Staten Island,2,23,602,0.02
+Staten Island,2,13,612,0.02
+Staten Island,2,8,619,0.02
+Staten Island,2,22,650,0.02
+Staten Island,2,21,651,0.02
+Staten Island,2,9,676,0.02
+Staten Island,2,19,705,0.02
+Staten Island,2,16,708,0.02
+Staten Island,2,14,728,0.02
+Staten Island,2,17,755,0.03
+Staten Island,2,18,761,0.03
+Staten Island,2,20,781,0.03
+Staten Island,2,0,850,0.03
+Staten Island,2,15,885,0.03
+Staten Island,2,12,999,0.03
+Manhattan,2,6,1316,0.04
+Manhattan,2,5,1390,0.05
+Bronx,2,5,1450,0.05
+Queens,2,5,1501,0.05
+Bronx,2,6,1502,0.05
+Queens,2,6,1614,0.05
+Bronx,2,4,1689,0.06
+Bronx,2,3,1732,0.06
+Manhattan,2,4,1890,0.06
+Brooklyn,2,5,1941,0.07
+Bronx,2,7,2060,0.07
+Manhattan,2,7,2061,0.07
+Queens,2,4,2075,0.07
+Manhattan,2,3,2090,0.07
+Bronx,2,2,2116,0.07
+Brooklyn,2,6,2170,0.07
+Queens,2,3,2269,0.08
+Queens,2,7,2333,0.08
+Manhattan,2,2,2374,0.08
+Brooklyn,2,4,2386,0.08
+Queens,2,2,2494,0.08
+Bronx,2,1,2571,0.09
+Brooklyn,2,3,2664,0.09
+Manhattan,2,1,2792,0.09
+Queens,2,1,2932,0.1
+Bronx,2,10,3067,0.1
+Bronx,2,11,3163,0.11
+Bronx,2,8,3189,0.11
+Brooklyn,2,7,3191,0.11
+Brooklyn,2,2,3257,0.11
+Manhattan,2,23,3386,0.11
+Queens,2,11,3412,0.11
+Bronx,2,13,3478,0.12
+Bronx,2,9,3520,0.12
+Bronx,2,23,3531,0.12
+Queens,2,10,3618,0.12
+Queens,2,8,3679,0.12
+Bronx,2,22,3705,0.12
+Queens,2,23,3706,0.12
+Queens,2,13,3710,0.12
+Manhattan,2,22,3712,0.12
+Queens,2,9,3946,0.13
+Manhattan,2,21,3947,0.13
+Manhattan,2,8,3976,0.13
+Brooklyn,2,1,3995,0.13
+Bronx,2,21,4009,0.13
+Bronx,2,14,4159,0.14
+Manhattan,2,11,4163,0.14
+Queens,2,22,4188,0.14
+Queens,2,14,4198,0.14
+Bronx,2,12,4219,0.14
+Queens,2,21,4247,0.14
+Queens,2,16,4387,0.15
+Manhattan,2,10,4390,0.15
+Bronx,2,20,4464,0.15
+Bronx,2,0,4525,0.15
+Bronx,2,19,4550,0.15
+Queens,2,19,4561,0.15
+Bronx,2,16,4584,0.15
+Queens,2,17,4626,0.16
+Queens,2,20,4636,0.16
+Manhattan,2,20,4644,0.16
+Bronx,2,17,4707,0.16
+Bronx,2,18,4710,0.16
+Queens,2,18,4814,0.16
+Manhattan,2,9,4817,0.16
+Queens,2,15,4864,0.16
+Brooklyn,2,11,4875,0.16
+Bronx,2,15,5003,0.17
+Manhattan,2,13,5010,0.17
+Manhattan,2,0,5028,0.17
+Manhattan,2,19,5121,0.17
+Brooklyn,2,23,5232,0.18
+Queens,2,0,5304,0.18
+Brooklyn,2,10,5402,0.18
+Manhattan,2,14,5418,0.18
+Brooklyn,2,8,5475,0.18
+Brooklyn,2,22,5612,0.19
+Brooklyn,2,13,5692,0.19
+Manhattan,2,18,5797,0.19
+Brooklyn,2,9,5857,0.2
+Manhattan,2,16,5857,0.2
+Queens,2,12,5870,0.2
+Manhattan,2,17,5959,0.2
+Brooklyn,2,21,6074,0.2
+Manhattan,2,15,6188,0.21
+Brooklyn,2,14,6271,0.21
+Brooklyn,2,20,6468,0.22
+Brooklyn,2,19,6636,0.22
+Manhattan,2,12,6810,0.23
+Brooklyn,2,17,6834,0.23
+Brooklyn,2,16,6848,0.23
+Brooklyn,2,18,6963,0.23
+Brooklyn,2,15,7371,0.25
+Brooklyn,2,0,7527,0.25
+Brooklyn,2,12,7716,0.26
+(Null),3,5,3,0.0
+(Null),3,3,5,0.0
+(Null),3,2,5,0.0
+(Null),3,4,6,0.0
+(Null),3,7,6,0.0
+(Null),3,8,8,0.0
+(Null),3,6,10,0.0
+(Null),3,11,11,0.0
+(Null),3,10,12,0.0
+(Null),3,1,13,0.0
+(Null),3,19,13,0.0
+(Null),3,16,14,0.0
+(Null),3,23,14,0.0
+(Null),3,17,14,0.0
+(Null),3,0,15,0.0
+(Null),3,14,15,0.0
+(Null),3,18,16,0.0
+(Null),3,21,17,0.0
+(Null),3,9,18,0.0
+(Null),3,12,19,0.0
+(Null),3,15,22,0.0
+(Null),3,13,24,0.0
+(Null),3,20,25,0.0
+(Null),3,22,27,0.0
+Staten Island,3,5,193,0.01
+Staten Island,3,6,232,0.01
+Staten Island,3,4,237,0.01
+Staten Island,3,3,270,0.01
+Staten Island,3,2,320,0.01
+Staten Island,3,7,353,0.01
+Staten Island,3,1,421,0.01
+Staten Island,3,11,559,0.02
+Staten Island,3,23,635,0.02
+Staten Island,3,10,643,0.02
+Staten Island,3,9,645,0.02
+Staten Island,3,8,645,0.02
+Staten Island,3,13,698,0.02
+Staten Island,3,17,722,0.02
+Staten Island,3,22,736,0.02
+Staten Island,3,21,738,0.02
+Staten Island,3,14,748,0.03
+Staten Island,3,20,755,0.03
+Staten Island,3,18,776,0.03
+Staten Island,3,16,793,0.03
+Staten Island,3,19,805,0.03
+Staten Island,3,15,825,0.03
+Staten Island,3,0,841,0.03
+Staten Island,3,12,971,0.03
+Manhattan,3,5,1230,0.04
+Bronx,3,5,1333,0.04
+Manhattan,3,6,1344,0.05
+Queens,3,5,1377,0.05
+Bronx,3,4,1455,0.05
+Queens,3,6,1578,0.05
+Bronx,3,6,1595,0.05
+Manhattan,3,4,1622,0.05
+Bronx,3,3,1674,0.06
+Brooklyn,3,5,1743,0.06
+Queens,3,4,1748,0.06
+Manhattan,3,3,1850,0.06
+Queens,3,3,1913,0.06
+Bronx,3,2,1976,0.07
+Bronx,3,7,2050,0.07
+Manhattan,3,7,2075,0.07
+Brooklyn,3,4,2086,0.07
+Manhattan,3,2,2133,0.07
+Queens,3,2,2165,0.07
+Queens,3,7,2374,0.08
+Brooklyn,3,6,2408,0.08
+Brooklyn,3,3,2437,0.08
+Bronx,3,1,2466,0.08
+Manhattan,3,1,2591,0.09
+Queens,3,1,2749,0.09
+Brooklyn,3,2,2993,0.1
+Bronx,3,8,3168,0.11
+Bronx,3,10,3227,0.11
+Brooklyn,3,7,3236,0.11
+Bronx,3,11,3324,0.11
+Bronx,3,9,3396,0.11
+Queens,3,11,3559,0.12
+Queens,3,10,3604,0.12
+Queens,3,8,3628,0.12
+Brooklyn,3,1,3752,0.13
+Queens,3,9,3866,0.13
+Manhattan,3,8,3878,0.13
+Bronx,3,13,3886,0.13
+Manhattan,3,23,3929,0.13
+Bronx,3,23,3935,0.13
+Queens,3,13,3963,0.13
+Queens,3,23,4140,0.14
+Manhattan,3,22,4157,0.14
+Bronx,3,22,4266,0.14
+Bronx,3,0,4298,0.14
+Bronx,3,12,4417,0.15
+Manhattan,3,10,4422,0.15
+Manhattan,3,11,4431,0.15
+Bronx,3,21,4446,0.15
+Bronx,3,14,4497,0.15
+Manhattan,3,21,4530,0.15
+Queens,3,14,4539,0.15
+Manhattan,3,0,4573,0.15
+Queens,3,22,4585,0.15
+Queens,3,21,4598,0.15
+Queens,3,16,4774,0.16
+Bronx,3,20,4776,0.16
+Manhattan,3,9,4807,0.16
+Bronx,3,19,4857,0.16
+Queens,3,17,4870,0.16
+Queens,3,20,4877,0.16
+Queens,3,19,4905,0.16
+Queens,3,0,4929,0.17
+Bronx,3,17,5042,0.17
+Bronx,3,16,5077,0.17
+Queens,3,18,5078,0.17
+Bronx,3,18,5165,0.17
+Manhattan,3,20,5169,0.17
+Brooklyn,3,11,5187,0.17
+Queens,3,15,5193,0.17
+Brooklyn,3,8,5292,0.18
+Brooklyn,3,10,5341,0.18
+Manhattan,3,13,5405,0.18
+Bronx,3,15,5406,0.18
+Brooklyn,3,9,5614,0.19
+Brooklyn,3,23,5782,0.19
+Queens,3,12,5861,0.2
+Brooklyn,3,13,5971,0.2
+Manhattan,3,19,5978,0.2
+Manhattan,3,14,5978,0.2
+Brooklyn,3,22,6484,0.22
+Manhattan,3,18,6506,0.22
+Manhattan,3,16,6512,0.22
+Manhattan,3,17,6632,0.22
+Manhattan,3,15,6660,0.22
+Brooklyn,3,14,6706,0.23
+Brooklyn,3,21,6841,0.23
+Manhattan,3,12,7124,0.24
+Brooklyn,3,0,7187,0.24
+Brooklyn,3,19,7269,0.24
+Brooklyn,3,20,7273,0.24
+Brooklyn,3,16,7360,0.25
+Brooklyn,3,17,7431,0.25
+Brooklyn,3,18,7456,0.25
+Brooklyn,3,15,7696,0.26
+Brooklyn,3,12,7732,0.26
+(Null),4,3,4,0.0
+(Null),4,5,4,0.0
+(Null),4,4,6,0.0
+(Null),4,23,7,0.0
+(Null),4,6,10,0.0
+(Null),4,10,10,0.0
+(Null),4,7,10,0.0
+(Null),4,11,12,0.0
+(Null),4,22,12,0.0
+(Null),4,2,13,0.0
+(Null),4,8,13,0.0
+(Null),4,13,14,0.0
+(Null),4,9,15,0.0
+(Null),4,17,16,0.0
+(Null),4,1,17,0.0
+(Null),4,16,17,0.0
+(Null),4,18,17,0.0
+(Null),4,19,17,0.0
+(Null),4,15,18,0.0
+(Null),4,21,18,0.0
+(Null),4,20,20,0.0
+(Null),4,0,20,0.0
+(Null),4,12,23,0.0
+(Null),4,14,26,0.0
+Staten Island,4,5,189,0.01
+Staten Island,4,4,247,0.01
+Staten Island,4,6,290,0.01
+Staten Island,4,3,292,0.01
+Staten Island,4,2,334,0.01
+Staten Island,4,7,357,0.01
+Staten Island,4,1,456,0.02
+Staten Island,4,11,561,0.02
+Staten Island,4,8,607,0.02
+Staten Island,4,10,628,0.02
+Staten Island,4,9,675,0.02
+Staten Island,4,13,703,0.02
+Staten Island,4,23,718,0.02
+Staten Island,4,22,746,0.03
+Staten Island,4,18,755,0.03
+Staten Island,4,14,766,0.03
+Staten Island,4,21,769,0.03
+Staten Island,4,16,775,0.03
+Staten Island,4,19,780,0.03
+Staten Island,4,20,838,0.03
+Staten Island,4,15,842,0.03
+Staten Island,4,17,847,0.03
+Staten Island,4,0,870,0.03
+Staten Island,4,12,1075,0.04
+Manhattan,4,5,1211,0.04
+Bronx,4,5,1371,0.05
+Manhattan,4,6,1459,0.05
+Queens,4,5,1482,0.05
+Bronx,4,4,1490,0.05
+Manhattan,4,4,1638,0.06
+Bronx,4,3,1672,0.06
+Brooklyn,4,5,1782,0.06
+Bronx,4,6,1788,0.06
+Queens,4,4,1828,0.06
+Queens,4,6,1863,0.06
+Queens,4,3,2010,0.07
+Bronx,4,2,2057,0.07
+Manhattan,4,3,2061,0.07
+Manhattan,4,7,2071,0.07
+Brooklyn,4,4,2082,0.07
+Bronx,4,7,2175,0.07
+Queens,4,2,2447,0.08
+Manhattan,4,2,2458,0.08
+Queens,4,7,2473,0.08
+Brooklyn,4,3,2514,0.08
+Brooklyn,4,6,2546,0.09
+Bronx,4,1,2702,0.09
+Queens,4,1,2941,0.1
+Manhattan,4,1,3085,0.1
+Brooklyn,4,2,3183,0.11
+Bronx,4,10,3220,0.11
+Brooklyn,4,7,3270,0.11
+Bronx,4,8,3340,0.11
+Bronx,4,11,3371,0.11
+Bronx,4,9,3498,0.12
+Queens,4,11,3659,0.12
+Queens,4,10,3670,0.12
+Queens,4,8,3815,0.13
+Bronx,4,23,3869,0.13
+Manhattan,4,8,3924,0.13
+Queens,4,13,4012,0.13
+Manhattan,4,23,4015,0.14
+Queens,4,9,4030,0.14
+Bronx,4,13,4035,0.14
+Brooklyn,4,1,4072,0.14
+Queens,4,23,4127,0.14
+Bronx,4,22,4210,0.14
+Manhattan,4,11,4245,0.14
+Manhattan,4,22,4301,0.14
+Bronx,4,21,4440,0.15
+Bronx,4,12,4468,0.15
+Manhattan,4,10,4477,0.15
+Queens,4,14,4594,0.15
+Manhattan,4,21,4608,0.15
+Bronx,4,14,4611,0.16
+Bronx,4,0,4636,0.16
+Queens,4,22,4642,0.16
+Manhattan,4,9,4740,0.16
+Queens,4,21,4760,0.16
+Bronx,4,20,4778,0.16
+Queens,4,20,4883,0.16
+Bronx,4,19,4939,0.17
+Queens,4,16,4954,0.17
+Queens,4,0,4966,0.17
+Queens,4,19,5030,0.17
+Manhattan,4,0,5037,0.17
+Queens,4,17,5099,0.17
+Bronx,4,18,5166,0.17
+Brooklyn,4,11,5223,0.18
+Queens,4,15,5237,0.18
+Brooklyn,4,10,5243,0.18
+Queens,4,18,5249,0.18
+Bronx,4,17,5258,0.18
+Manhattan,4,20,5290,0.18
+Bronx,4,16,5306,0.18
+Brooklyn,4,8,5422,0.18
+Bronx,4,15,5517,0.19
+Manhattan,4,13,5667,0.19
+Brooklyn,4,9,5709,0.19
+Brooklyn,4,23,6004,0.2
+Queens,4,12,6012,0.2
+Manhattan,4,19,6073,0.2
+Manhattan,4,14,6085,0.2
+Brooklyn,4,13,6194,0.21
+Brooklyn,4,22,6482,0.22
+Manhattan,4,16,6508,0.22
+Manhattan,4,17,6687,0.22
+Brooklyn,4,21,6715,0.23
+Manhattan,4,18,6806,0.23
+Manhattan,4,15,6952,0.23
+Brooklyn,4,14,6962,0.23
+Manhattan,4,12,7205,0.24
+Brooklyn,4,20,7278,0.24
+Brooklyn,4,19,7402,0.25
+Brooklyn,4,16,7476,0.25
+Brooklyn,4,18,7511,0.25
+Brooklyn,4,17,7571,0.25
+Brooklyn,4,0,7634,0.26
+Brooklyn,4,12,7885,0.27
+Brooklyn,4,15,8050,0.27
+(Null),5,22,2,0.0
+(Null),5,6,2,0.0
+(Null),5,7,3,0.0
+(Null),5,3,3,0.0
+(Null),5,1,4,0.0
+(Null),5,4,4,0.0
+(Null),5,21,4,0.0
+(Null),5,14,5,0.0
+(Null),5,11,5,0.0
+(Null),5,2,5,0.0
+(Null),5,23,5,0.0
+(Null),5,18,6,0.0
+(Null),5,5,7,0.0
+(Null),5,20,8,0.0
+(Null),5,13,8,0.0
+(Null),5,19,8,0.0
+(Null),5,8,9,0.0
+(Null),5,9,9,0.0
+(Null),5,17,9,0.0
+(Null),5,16,11,0.0
+(Null),5,10,13,0.0
+(Null),5,15,17,0.0
+(Null),5,0,17,0.0
+(Null),5,12,18,0.0
+Staten Island,5,5,192,0.01
+Staten Island,5,4,245,0.01
+Staten Island,5,3,247,0.01
+Staten Island,5,6,324,0.01
+Staten Island,5,2,359,0.01
+Staten Island,5,7,417,0.01
+Staten Island,5,1,459,0.02
+Staten Island,5,11,542,0.02
+Staten Island,5,8,594,0.02
+Staten Island,5,10,636,0.02
+Staten Island,5,9,645,0.02
+Staten Island,5,23,666,0.02
+Staten Island,5,22,693,0.02
+Staten Island,5,13,697,0.02
+Staten Island,5,21,702,0.02
+Staten Island,5,14,716,0.02
+Staten Island,5,19,749,0.03
+Staten Island,5,16,762,0.03
+Staten Island,5,18,789,0.03
+Staten Island,5,15,805,0.03
+Staten Island,5,17,806,0.03
+Staten Island,5,20,861,0.03
+Staten Island,5,0,878,0.03
+Staten Island,5,12,1025,0.03
+Manhattan,5,5,1355,0.05
+Bronx,5,5,1360,0.05
+Queens,5,5,1443,0.05
+Manhattan,5,6,1505,0.05
+Bronx,5,4,1530,0.05
+Bronx,5,3,1742,0.06
+Bronx,5,6,1775,0.06
+Brooklyn,5,5,1812,0.06
+Queens,5,6,1850,0.06
+Manhattan,5,4,1906,0.06
+Queens,5,4,1956,0.07
+Queens,5,3,2042,0.07
+Manhattan,5,7,2055,0.07
+Bronx,5,7,2084,0.07
+Bronx,5,2,2177,0.07
+Brooklyn,5,4,2226,0.07
+Manhattan,5,3,2346,0.08
+Queens,5,7,2362,0.08
+Queens,5,2,2514,0.08
+Brooklyn,5,6,2627,0.09
+Manhattan,5,2,2654,0.09
+Brooklyn,5,3,2698,0.09
+Bronx,5,1,2731,0.09
+Queens,5,1,3040,0.1
+Manhattan,5,1,3091,0.1
+Bronx,5,10,3109,0.1
+Bronx,5,8,3185,0.11
+Brooklyn,5,2,3272,0.11
+Bronx,5,11,3273,0.11
+Bronx,5,9,3374,0.11
+Brooklyn,5,7,3377,0.11
+Queens,5,11,3447,0.12
+Queens,5,8,3629,0.12
+Manhattan,5,8,3735,0.13
+Queens,5,10,3739,0.13
+Bronx,5,13,3797,0.13
+Queens,5,9,3902,0.13
+Bronx,5,23,3969,0.13
+Queens,5,13,3985,0.13
+Brooklyn,5,1,4174,0.14
+Queens,5,23,4251,0.14
+Bronx,5,22,4309,0.14
+Bronx,5,21,4321,0.15
+Bronx,5,12,4347,0.15
+Manhattan,5,23,4357,0.15
+Manhattan,5,10,4390,0.15
+Queens,5,14,4408,0.15
+Bronx,5,0,4431,0.15
+Manhattan,5,22,4458,0.15
+Bronx,5,14,4468,0.15
+Manhattan,5,11,4477,0.15
+Queens,5,22,4638,0.16
+Manhattan,5,21,4675,0.16
+Queens,5,21,4717,0.16
+Bronx,5,19,4763,0.16
+Queens,5,16,4771,0.16
+Bronx,5,20,4779,0.16
+Queens,5,19,4788,0.16
+Queens,5,17,4818,0.16
+Manhattan,5,9,4843,0.16
+Queens,5,20,4851,0.16
+Bronx,5,18,4907,0.17
+Bronx,5,17,4950,0.17
+Bronx,5,16,4953,0.17
+Manhattan,5,0,5027,0.17
+Queens,5,15,5083,0.17
+Queens,5,18,5103,0.17
+Queens,5,0,5128,0.17
+Brooklyn,5,11,5130,0.17
+Brooklyn,5,10,5179,0.17
+Brooklyn,5,8,5267,0.18
+Manhattan,5,20,5297,0.18
+Bronx,5,15,5318,0.18
+Manhattan,5,13,5521,0.19
+Brooklyn,5,9,5592,0.19
+Manhattan,5,14,5842,0.2
+Queens,5,12,5892,0.2
+Manhattan,5,19,5906,0.2
+Brooklyn,5,13,5933,0.2
+Brooklyn,5,23,6126,0.21
+Manhattan,5,18,6450,0.22
+Brooklyn,5,22,6498,0.22
+Brooklyn,5,14,6589,0.22
+Brooklyn,5,21,6626,0.22
+Manhattan,5,16,6693,0.23
+Manhattan,5,17,6709,0.23
+Manhattan,5,15,6919,0.23
+Manhattan,5,12,7180,0.24
+Brooklyn,5,17,7212,0.24
+Brooklyn,5,19,7293,0.25
+Brooklyn,5,16,7297,0.25
+Brooklyn,5,18,7300,0.25
+Brooklyn,5,20,7327,0.25
+Brooklyn,5,12,7585,0.26
+Brooklyn,5,0,7646,0.26
+Brooklyn,5,15,7663,0.26
+(Null),6,6,2,0.0
+(Null),6,3,2,0.0
+(Null),6,4,2,0.0
+(Null),6,2,3,0.0
+(Null),6,5,3,0.0
+(Null),6,8,4,0.0
+(Null),6,9,4,0.0
+(Null),6,21,5,0.0
+(Null),6,7,5,0.0
+(Null),6,13,6,0.0
+(Null),6,0,7,0.0
+(Null),6,23,9,0.0
+(Null),6,18,9,0.0
+(Null),6,22,9,0.0
+(Null),6,15,9,0.0
+(Null),6,11,9,0.0
+(Null),6,20,10,0.0
+(Null),6,16,10,0.0
+(Null),6,14,11,0.0
+(Null),6,17,13,0.0
+(Null),6,19,16,0.0
+(Null),6,10,16,0.0
+(Null),6,12,20,0.0
+Staten Island,6,5,227,0.01
+Staten Island,6,4,240,0.01
+Staten Island,6,6,248,0.01
+Staten Island,6,3,335,0.01
+Staten Island,6,7,377,0.01
+Staten Island,6,2,406,0.01
+Staten Island,6,1,505,0.02
+Staten Island,6,11,541,0.02
+Staten Island,6,10,614,0.02
+Staten Island,6,8,668,0.02
+Staten Island,6,9,678,0.02
+Staten Island,6,21,697,0.02
+Staten Island,6,14,704,0.02
+Staten Island,6,13,704,0.02
+Staten Island,6,23,734,0.02
+Staten Island,6,22,759,0.03
+Staten Island,6,19,787,0.03
+Staten Island,6,16,789,0.03
+Staten Island,6,17,812,0.03
+Staten Island,6,20,816,0.03
+Staten Island,6,18,861,0.03
+Staten Island,6,15,882,0.03
+Staten Island,6,0,898,0.03
+Staten Island,6,12,1041,0.04
+Bronx,6,5,1485,0.05
+Manhattan,6,5,1491,0.05
+Manhattan,6,6,1554,0.05
+Queens,6,5,1634,0.05
+Bronx,6,6,1677,0.06
+Bronx,6,4,1786,0.06
+Bronx,6,3,1961,0.07
+Queens,6,6,1990,0.07
+Brooklyn,6,5,2028,0.07
+Queens,6,4,2100,0.07
+Manhattan,6,7,2103,0.07
+Bronx,6,7,2126,0.07
+Manhattan,6,4,2308,0.08
+Brooklyn,6,4,2334,0.08
+Queens,6,3,2349,0.08
+Bronx,6,2,2414,0.08
+Queens,6,7,2545,0.09
+Queens,6,2,2626,0.09
+Brooklyn,6,6,2741,0.09
+Manhattan,6,3,2849,0.1
+Bronx,6,1,2941,0.1
+Brooklyn,6,3,3020,0.1
+Bronx,6,10,3178,0.11
+Bronx,6,8,3185,0.11
+Queens,6,1,3190,0.11
+Brooklyn,6,7,3224,0.11
+Bronx,6,11,3233,0.11
+Manhattan,6,2,3317,0.11
+Bronx,6,9,3382,0.11
+Brooklyn,6,2,3544,0.12
+Queens,6,11,3602,0.12
+Manhattan,6,8,3753,0.13
+Queens,6,8,3754,0.13
+Manhattan,6,1,3813,0.13
+Queens,6,10,3836,0.13
+Bronx,6,13,3864,0.13
+Queens,6,13,4054,0.14
+Queens,6,9,4097,0.14
+Bronx,6,12,4280,0.14
+Manhattan,6,11,4419,0.15
+Brooklyn,6,1,4455,0.15
+Manhattan,6,10,4459,0.15
+Bronx,6,14,4475,0.15
+Bronx,6,23,4522,0.15
+Queens,6,14,4672,0.16
+Bronx,6,22,4682,0.16
+Bronx,6,21,4775,0.16
+Manhattan,6,9,4840,0.16
+Bronx,6,0,4928,0.17
+Queens,6,23,5024,0.17
+Bronx,6,20,5025,0.17
+Queens,6,21,5063,0.17
+Brooklyn,6,11,5086,0.17
+Bronx,6,19,5111,0.17
+Queens,6,22,5184,0.17
+Queens,6,16,5219,0.18
+Bronx,6,18,5239,0.18
+Brooklyn,6,8,5307,0.18
+Queens,6,20,5310,0.18
+Queens,6,19,5340,0.18
+Queens,6,0,5343,0.18
+Manhattan,6,22,5354,0.18
+Brooklyn,6,10,5366,0.18
+Bronx,6,17,5419,0.18
+Queens,6,17,5460,0.18
+Bronx,6,16,5479,0.18
+Manhattan,6,21,5511,0.19
+Queens,6,15,5533,0.19
+Manhattan,6,13,5563,0.19
+Queens,6,18,5580,0.19
+Bronx,6,15,5596,0.19
+Brooklyn,6,9,5642,0.19
+Manhattan,6,0,5675,0.19
+Manhattan,6,23,5700,0.19
+Manhattan,6,20,5867,0.2
+Queens,6,12,5973,0.2
+Brooklyn,6,13,6012,0.2
+Manhattan,6,14,6231,0.21
+Manhattan,6,19,6555,0.22
+Brooklyn,6,14,7060,0.24
+Brooklyn,6,23,7209,0.24
+Manhattan,6,16,7231,0.24
+Manhattan,6,12,7304,0.25
+Manhattan,6,18,7324,0.25
+Manhattan,6,15,7386,0.25
+Brooklyn,6,21,7477,0.25
+Brooklyn,6,22,7517,0.25
+Manhattan,6,17,7567,0.25
+Brooklyn,6,19,7664,0.26
+Brooklyn,6,20,7814,0.26
+Brooklyn,6,12,7885,0.27
+Brooklyn,6,0,8005,0.27
+Brooklyn,6,18,8062,0.27
+Brooklyn,6,17,8128,0.27
+Brooklyn,6,16,8217,0.28
+Brooklyn,6,15,8298,0.28
+(Null),7,7,1,0.0
+(Null),7,16,3,0.0
+(Null),7,13,3,0.0
+(Null),7,3,3,0.0
+(Null),7,5,3,0.0
+(Null),7,6,4,0.0
+(Null),7,8,4,0.0
+(Null),7,9,4,0.0
+(Null),7,15,5,0.0
+(Null),7,14,5,0.0
+(Null),7,21,6,0.0
+(Null),7,20,6,0.0
+(Null),7,10,6,0.0
+(Null),7,17,7,0.0
+(Null),7,11,7,0.0
+(Null),7,4,7,0.0
+(Null),7,1,7,0.0
+(Null),7,19,8,0.0
+(Null),7,23,9,0.0
+(Null),7,22,10,0.0
+(Null),7,12,10,0.0
+(Null),7,18,10,0.0
+(Null),7,0,11,0.0
+(Null),7,2,15,0.0
+Staten Island,7,6,173,0.01
+Staten Island,7,7,215,0.01
+Staten Island,7,5,245,0.01
+Staten Island,7,4,371,0.01
+Staten Island,7,8,397,0.01
+Staten Island,7,3,439,0.01
+Staten Island,7,9,443,0.01
+Staten Island,7,11,449,0.02
+Staten Island,7,10,519,0.02
+Staten Island,7,14,546,0.02
+Staten Island,7,13,557,0.02
+Staten Island,7,2,558,0.02
+Staten Island,7,16,622,0.02
+Staten Island,7,1,623,0.02
+Staten Island,7,18,685,0.02
+Staten Island,7,17,697,0.02
+Staten Island,7,22,703,0.02
+Staten Island,7,21,705,0.02
+Staten Island,7,15,762,0.03
+Staten Island,7,19,764,0.03
+Staten Island,7,23,768,0.03
+Staten Island,7,20,790,0.03
+Staten Island,7,12,826,0.03
+Staten Island,7,0,892,0.03
+Bronx,7,7,1479,0.05
+Manhattan,7,7,1559,0.05
+Manhattan,7,6,1589,0.05
+Queens,7,7,1608,0.05
+Bronx,7,6,1645,0.06
+Queens,7,6,1653,0.06
+Bronx,7,5,2000,0.07
+Bronx,7,8,2002,0.07
+Brooklyn,7,7,2189,0.07
+Manhattan,7,8,2216,0.07
+Manhattan,7,5,2245,0.08
+Queens,7,5,2286,0.08
+Bronx,7,9,2307,0.08
+Queens,7,8,2366,0.08
+Brooklyn,7,6,2410,0.08
+Bronx,7,10,2546,0.09
+Bronx,7,11,2685,0.09
+Queens,7,11,2846,0.1
+Queens,7,9,2854,0.1
+Queens,7,10,2887,0.1
+Manhattan,7,9,2900,0.1
+Brooklyn,7,5,2903,0.1
+Bronx,7,4,3061,0.1
+Bronx,7,13,3135,0.11
+Brooklyn,7,8,3204,0.11
+Manhattan,7,10,3301,0.11
+Bronx,7,3,3360,0.11
+Queens,7,13,3375,0.11
+Manhattan,7,11,3456,0.12
+Bronx,7,14,3547,0.12
+Queens,7,4,3581,0.12
+Queens,7,14,3628,0.12
+Bronx,7,12,3690,0.12
+Bronx,7,2,3738,0.13
+Queens,7,3,3751,0.13
+Brooklyn,7,9,3792,0.13
+Bronx,7,16,3925,0.13
+Bronx,7,15,3932,0.13
+Manhattan,7,4,3963,0.13
+Queens,7,2,4019,0.14
+Queens,7,16,4033,0.14
+Brooklyn,7,10,4107,0.14
+Queens,7,15,4160,0.14
+Bronx,7,1,4191,0.14
+Bronx,7,19,4200,0.14
+Bronx,7,18,4207,0.14
+Bronx,7,17,4208,0.14
+Brooklyn,7,11,4212,0.14
+Bronx,7,22,4333,0.15
+Brooklyn,7,4,4351,0.15
+Queens,7,1,4353,0.15
+Queens,7,17,4380,0.15
+Bronx,7,21,4391,0.15
+Bronx,7,23,4520,0.15
+Bronx,7,20,4529,0.15
+Queens,7,19,4564,0.15
+Queens,7,22,4567,0.15
+Manhattan,7,13,4578,0.15
+Queens,7,18,4593,0.15
+Queens,7,21,4597,0.15
+Queens,7,23,4726,0.16
+Queens,7,20,4747,0.16
+Manhattan,7,22,4831,0.16
+Brooklyn,7,13,4833,0.16
+Manhattan,7,21,4841,0.16
+Queens,7,12,4893,0.16
+Brooklyn,7,3,4939,0.17
+Manhattan,7,3,4950,0.17
+Manhattan,7,14,4969,0.17
+Manhattan,7,20,5127,0.17
+Bronx,7,0,5248,0.18
+Manhattan,7,12,5338,0.18
+Manhattan,7,23,5343,0.18
+Brooklyn,7,14,5353,0.18
+Manhattan,7,19,5508,0.19
+Brooklyn,7,2,5508,0.19
+Manhattan,7,2,5573,0.19
+Manhattan,7,15,5717,0.19
+Brooklyn,7,15,5751,0.19
+Manhattan,7,16,5776,0.19
+Queens,7,0,5799,0.2
+Manhattan,7,18,5806,0.2
+Manhattan,7,17,5861,0.2
+Brooklyn,7,16,5892,0.2
+Manhattan,7,1,5945,0.2
+Brooklyn,7,17,6146,0.21
+Brooklyn,7,12,6242,0.21
+Brooklyn,7,1,6360,0.21
+Brooklyn,7,18,6361,0.21
+Brooklyn,7,19,6391,0.21
+Brooklyn,7,21,6564,0.22
+Manhattan,7,0,6840,0.23
+Brooklyn,7,20,6890,0.23
+Brooklyn,7,23,6900,0.23
+Brooklyn,7,22,6981,0.23
+Brooklyn,7,0,8467,0.28

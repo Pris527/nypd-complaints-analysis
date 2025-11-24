@@ -1,0 +1,101 @@
+borough,victim_age_bucket,victim_gender,complaint_count
+(Null),65+,Female,28
+(Null),18–24,Female,107
+(Null),Unknown,Female,39
+(Null),25–44,Female,255
+(Null),45–64,Female,116
+(Null),<18,Female,33
+Bronx,45–64,Female,42900
+Bronx,65+,Female,11486
+Bronx,Unknown,Female,7825
+Bronx,25–44,Female,96811
+Bronx,<18,Female,15118
+Bronx,18–24,Female,32977
+Brooklyn,25–44,Female,159935
+Brooklyn,18–24,Female,50995
+Brooklyn,Unknown,Female,12483
+Brooklyn,<18,Female,19300
+Brooklyn,45–64,Female,71872
+Brooklyn,65+,Female,21716
+Manhattan,Unknown,Female,10570
+Manhattan,25–44,Female,118483
+Manhattan,65+,Female,20912
+Manhattan,45–64,Female,50137
+Manhattan,<18,Female,8736
+Manhattan,18–24,Female,47454
+Queens,25–44,Female,107744
+Queens,<18,Female,13008
+Queens,Unknown,Female,8772
+Queens,45–64,Female,57019
+Queens,65+,Female,18437
+Queens,18–24,Female,31969
+Staten Island,45–64,Female,10082
+Staten Island,25–44,Female,16623
+Staten Island,<18,Female,2347
+Staten Island,18–24,Female,4990
+Staten Island,65+,Female,3409
+Staten Island,Unknown,Female,1406
+(Null),25–44,Male,275
+(Null),Unknown,Male,35
+(Null),45–64,Male,149
+(Null),<18,Male,77
+(Null),65+,Male,28
+(Null),18–24,Male,102
+Bronx,45–64,Male,56296
+Bronx,18–24,Male,32855
+Bronx,25–44,Male,102148
+Bronx,65+,Male,12363
+Bronx,<18,Male,20026
+Bronx,Unknown,Male,11483
+Brooklyn,45–64,Male,85829
+Brooklyn,25–44,Male,162471
+Brooklyn,Unknown,Male,15777
+Brooklyn,<18,Male,26075
+Brooklyn,65+,Male,21085
+Brooklyn,18–24,Male,47486
+Manhattan,25–44,Male,117751
+Manhattan,65+,Male,16669
+Manhattan,18–24,Male,35546
+Manhattan,<18,Male,10940
+Manhattan,Unknown,Male,12671
+Manhattan,45–64,Male,57502
+Queens,<18,Male,16611
+Queens,65+,Male,18637
+Queens,Unknown,Male,11456
+Queens,18–24,Male,32295
+Queens,25–44,Male,120022
+Queens,45–64,Male,72779
+Staten Island,<18,Male,2717
+Staten Island,65+,Male,3242
+Staten Island,25–44,Male,14818
+Staten Island,18–24,Male,4319
+Staten Island,Unknown,Male,1833
+Staten Island,45–64,Male,11367
+(Null),Unknown,Unknown,446
+Bronx,Unknown,Unknown,146549
+Bronx,45–64,Unknown,141
+Bronx,<18,Unknown,3
+Bronx,65+,Unknown,7
+Bronx,18–24,Unknown,223
+Bronx,25–44,Unknown,1233
+Brooklyn,45–64,Unknown,180
+Brooklyn,Unknown,Unknown,211064
+Brooklyn,65+,Unknown,10
+Brooklyn,18–24,Unknown,236
+Brooklyn,<18,Unknown,2
+Brooklyn,25–44,Unknown,1535
+Manhattan,18–24,Unknown,203
+Manhattan,45–64,Unknown,166
+Manhattan,65+,Unknown,13
+Manhattan,Unknown,Unknown,224957
+Manhattan,25–44,Unknown,1244
+Queens,Unknown,Unknown,128631
+Queens,18–24,Unknown,208
+Queens,65+,Unknown,9
+Queens,25–44,Unknown,988
+Queens,45–64,Unknown,129
+Staten Island,18–24,Unknown,33
+Staten Island,25–44,Unknown,219
+Staten Island,65+,Unknown,2
+Staten Island,Unknown,Unknown,23019
+Staten Island,45–64,Unknown,26

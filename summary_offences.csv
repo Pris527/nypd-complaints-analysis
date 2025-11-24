@@ -1,0 +1,53 @@
+borough,offense_description,offense_severity,complaint_count,borough_total,pct_of_borough,borough_rank
+Bronx,Robbery,High,513,13472,3.81,9
+Bronx,Grand Larceny,High,793,13472,5.89,5
+Bronx,Felony Assault,High,951,13472,7.06,4
+Brooklyn,Felony Assault,High,747,16361,4.57,6
+Brooklyn,Grand Larceny,High,861,16361,5.26,5
+Brooklyn,Miscellaneous Penal Law,High,599,16361,3.66,8
+Manhattan,Robbery,High,370,14460,2.56,10
+Manhattan,Felony Assault,High,568,14460,3.93,5
+Manhattan,Burglary,High,384,14460,2.66,9
+Manhattan,Grand Larceny,High,1696,14460,11.73,3
+Queens,Grand Larceny Of Motor Vehicle,High,411,12998,3.16,10
+Queens,Miscellaneous Penal Law,High,488,12998,3.75,7
+Queens,Grand Larceny,High,753,12998,5.79,4
+Queens,Felony Assault,High,647,12998,4.98,6
+Queens,Burglary,High,416,12998,3.2,9
+Staten Island,Criminal Mischief & Related Of,High,54,2509,2.15,10
+Staten Island,Grand Larceny,High,106,2509,4.22,8
+Staten Island,Felony Assault,High,107,2509,4.26,7
+Staten Island,Miscellaneous Penal Law,High,150,2509,5.98,5
+(Null),Other Offenses Related To Theft,Medium,1,182,0.55,2
+(Null),Petit Larceny,Medium,181,182,99.45,1
+Bronx,Vehicle And Traffic Laws,Medium,678,13472,5.03,6
+Bronx,Off. Agnst Pub Ord Sensblty &,Medium,459,13472,3.41,10
+Bronx,Other Offenses Related To Theft,Medium,568,13472,4.22,8
+Bronx,Criminal Mischief & Related Of,Medium,582,13472,4.32,7
+Bronx,Petit Larceny,Medium,1949,13472,14.47,2
+Bronx,Assault 3 & Related Offenses,Medium,1652,13472,12.26,3
+Brooklyn,Petit Larceny,Medium,2953,16361,18.05,1
+Brooklyn,Assault 3 & Related Offenses,Medium,1793,16361,10.96,3
+Brooklyn,Criminal Mischief & Related Of,Medium,687,16361,4.2,7
+Brooklyn,Vehicle And Traffic Laws,Medium,970,16361,5.93,4
+Brooklyn,Off. Agnst Pub Ord Sensblty &,Medium,515,16361,3.15,10
+Brooklyn,Other Offenses Related To Theft,Medium,549,16361,3.36,9
+Manhattan,Other Offenses Related To Theft,Medium,500,14460,3.46,6
+Manhattan,Assault 3 & Related Offenses,Medium,1367,14460,9.45,4
+Manhattan,Petit Larceny,Medium,3793,14460,26.23,1
+Manhattan,Criminal Mischief & Related Of,Medium,484,14460,3.35,7
+Manhattan,Vehicle And Traffic Laws,Medium,435,14460,3.01,8
+Queens,Vehicle And Traffic Laws,Medium,750,12998,5.77,5
+Queens,Petit Larceny,Medium,2637,12998,20.29,1
+Queens,Criminal Mischief & Related Of,Medium,467,12998,3.59,8
+Queens,Assault 3 & Related Offenses,Medium,1601,12998,12.32,3
+Staten Island,Vehicle And Traffic Laws,Medium,182,2509,7.25,4
+Staten Island,Assault 3 & Related Offenses,Medium,268,2509,10.68,3
+Staten Island,Petit Larceny,Medium,480,2509,19.13,2
+Staten Island,Criminal Mischief & Related Of,Medium,131,2509,5.22,6
+Staten Island,Off. Agnst Pub Ord Sensblty &,Medium,95,2509,3.79,9
+Bronx,Harrassment 2,Other,2048,13472,15.2,1
+Brooklyn,Harrassment 2,Other,2714,16361,16.59,2
+Manhattan,Harrassment 2,Other,1774,14460,12.27,2
+Queens,Harrassment 2,Other,1953,12998,15.03,2
+Staten Island,Harrassment 2,Other,515,2509,20.53,1
