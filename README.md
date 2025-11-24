@@ -186,16 +186,14 @@ All summary tables are stored in data/summary_tables/
 The dashboard features:
 
 **a. Daily Complaint Trend**
-- Continuous line chart showing long-term complaints
-
-
-![monthly_complaints](Images/Line_chart.jpeg)
+- Continuous line chart showing long-term complaints (see chart above)
 
 **b. Top Offences Bar Chart**
 - Focuses on high-volume crime categories
 - Helps prioritise policing and resource allocation
 
-![Top_Offences](86BA4177-58AA-4A1D-A942-7B6ED69210A9_1_201_a.jpeg)
+![Top_offences](86BA4177-58AA-4A1D-A942-7B6ED69210A9_1_201_a.jpeg)
+
 
 **c. Hourly-Day Heatmap**
 - Reveals "crime activity hotspots" by time of day
