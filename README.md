@@ -1,7 +1,7 @@
 # nypd-complaints-analysis
 **Uncovering NYC's crime patterns: A data analysis project using BigQuery and Tableau to visualize temporal and geographic trends in NYPD complaint data**.
 
-This project analyzes three years of NYPD complaint data to uncover patterns in when, where, and how incidents are reported across New York City. It combines large-scale SQL processing in BigQuery with an interactive Tableau dashboard designed to support operational insight and public-facing storytelling.
+This project analyses three years of NYPD complaint data to uncover patterns in when, where, and how incidents are reported across New York City. It combines large-scale SQL processing in BigQuery with an interactive Tableau dashboard designed to support operational insight and public-facing storytelling.
 As someone transitioning into data analytics from a social science background, I approached this project with two goals:
 
 1. Demonstrate strong analytical and technical capability using real, messy, multi-gigabyte data.
@@ -10,7 +10,7 @@ As someone transitioning into data analytics from a social science background, I
 
 The result is a dashboard that highlights borough-level trends, reporting delays, demographic disparities, and offense types in a format that is accessible to both technical users and non-technical audiences.
 
-To build a performant dashboard suitable for Tableau Public, and due to Tableau Public's size limitations, the dashboard uses summary tables generated in BiqQuery. The full processing of the raw 3GB dataset - including cleaning, partitioning, clustering, feature engineering, and aggregate - is fully documented in the SQL scripts in this repository. 
+To build a performant dashboard suitable for Tableau Public, and paying attention to Tableau Public's size limitations, the dashboard uses summary tables generated in BiqQuery. The full processing of the raw 3GB dataset - including cleaning, partitioning, clustering, feature engineering, and aggregate - is fully documented in the SQL scripts in this repository. 
 
 This repository contains:
 
@@ -70,8 +70,8 @@ Raw CSV (≈3GB) stored in Google Cloud Storage and loaded into BigQuery. The da
 **- Data cleaning + standardization**
 
 . Converted date/time fields into unified timestamps
-. Trimmed and normalized text fields
-. Standardized victim/suspect demographic values
+. Trimmed and normalised text fields
+. Standardised victim/suspect demographic values
 . Reconstructed geography columns
 . Derived key date/time features:
 
@@ -102,9 +102,9 @@ The raw timestamps often produce negative reporting lags due to:
 
 Two cleaning rules were applied:
 
-1. If reported_ts < complaint_from_ts, the record was discarded or labeled as "Unknown"
+1. If the **reported timw was earlier than the incident time**, the record was discarded or labeled as "Unknown" because an incident cannot be reported before it happens
 
-2. Median reporting lag was recalculated per offense category and borough
+2. I recalculated the median reporting delay for each offense category and borough, producing clean and realistic metrics for the Reporting Lag Quadrant Plot.
 
 This produced clean, interpretable metrics for the Reporting Lag Quadrant Plot.
 
@@ -220,19 +220,19 @@ Colour-coded quandrants reveal operational risk zones.
 
 **3. Key Insights From the Analysis**
 
-**.Clear weekend and evening surges** were visible across all boroughs, suggesting that community activity patterns — rather than isolated events — strongly influence when complaints are filed.
+. **Clear weekend and evening surges** were visible across all boroughs, suggesting that community activity patterns — rather than isolated events — strongly influence when complaints are filed.
 
-**.Assault, harassment, and grand larceny** consistently make up the highest share of reported offenses, pointing to recurring interpersonal and property-related concerns within NYC neighborhoods.
+. **Assault, harassment, and grand larceny** consistently make up the highest share of reported offenses, pointing to recurring interpersonal and property-related concerns within NYC neighborhoods.
 
-**.Reporting delays vary by borough**, with some areas showing slower reporting times around higher-severity offenses. This may reflect differences in access, community-police relationships, or logistical barriers to reporting.
+. **Reporting delays vary by borough**, with some areas showing slower reporting times around higher-severity offenses. This may reflect differences in access, community-police relationships, or logistical barriers to reporting.
 
-**.Adults between 25–64 represent the majority of victims**, with men appearing more frequently in the dataset. This reinforces known demographic exposure patterns but also highlights who is most affected in daily urban environments.
+. **Adults between 25–64 represent the majority of victims**, with men appearing more frequently in the dataset. This reinforces known demographic exposure patterns but also highlights who is most affected in daily urban environments.
 
-**.Brooklyn recorded the highest volume of complaints between 2022 and 2024**, closely followed by Manhattan. The distribution mirrors both population density and patterns of public mobility across boroughs.
+. **Brooklyn recorded the highest volume of complaints between 2022 and 2024**, closely followed by Manhattan. The distribution mirrors both population density and patterns of public mobility across boroughs.
 
-**.Complaint volume and reporting speed differ substantially by offense type** Certain crimes tend to be reported immediately, while others have longer lags — offering opportunities to better understand barriers to timely reporting.
+. **Complaint volume and reporting speed differ substantially by offense type** Certain crimes tend to be reported immediately, while others have longer lags — offering opportunities to better understand barriers to timely reporting.
 
-**Temporal rhythms are strong predictors of complaint activity** Distinct patterns emerge by hour, day of the week, and season, demonstrating how community routines shape reporting behaviour.
+. **Temporal rhythms are strong predictors of complaint activity** Distinct patterns emerge by hour, day of the week, and season, demonstrating how community routines shape reporting behaviour.
 
 
 These insights would help:
@@ -248,23 +248,23 @@ These insights would help:
 
 As I continue strengthening my data analytics skills, there are several improvements I plan to explore in future iterations of this project:
 
-**.Expand the analysis with a borough map:**
+. **Expand the analysis with a borough map:**
 Add a clean geospatial component that shows complaint density and severity patterns across NYC, enabling easier place-based storytelling.
 
-**.Integrate neighbourhood-level social indicators:**
+. **Integrate neighbourhood-level social indicators:**
 Combine complaint trends with contextual factors such as population density, age distribution, median income, or housing statistics to bring a more human-centered, social-science perspective to the findings.
 
-**.Deepen temporal analysis:**
+. **Deepen temporal analysis:**
 Explore weekday vs. weekend patterns, seasonal trends, and month-to-month changes to understand how community rhythms influence reported incidents.
 
-**.Enhance victim demographics profiles:**
+. **Enhance victim demographics profiles:**
 Add clearer categories for victim race, gender, and age to show disparities or protections needs across communities.
 
-**.Improve data refresh process:**
+. **Improve data refresh process:**
 Move from manual table creation to semi-automated BigQuery SQL scripts, so the summary tables used in Tableau update more efficiently over time.
 
-**.Develop borough-level narratives:**
+. **Develop borough-level narratives:**
 Use insights from the dashboard to craft short, data-informed case studies on how crime patterns differ by borough—leveraging my background in social sciences.
 
-**.Explore predictive indicators (lightweight):**
+. **Explore predictive indicators (lightweight):**
 Experiment with simple trend projections for future complaint volumes (e.g., using rolling averages), without requiring advanced machine-learning models.
