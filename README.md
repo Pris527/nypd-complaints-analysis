@@ -1,270 +1,174 @@
-# nypd-complaints-analysis
-**Uncovering NYC's crime patterns: A data analysis project using BigQuery and Tableau to visualize temporal and geographic trends in NYPD complaint data**.
+# NYPD Complaints Analysis — Data Insights for Public Safety
+**Using BigQuery and Tableau to reveal temporal, spatial, and behavioural patterns in NYC police reporting**
 
-This project analyses three years of NYPD complaint data to uncover patterns in when, where, and how incidents are reported across New York City. It combines large-scale SQL processing in BigQuery with an interactive Tableau dashboard designed to support operational insight and public-facing storytelling.
-As someone transitioning into data analytics from a social science background, I approached this project with two goals:
+---
 
-1. Demonstrate strong analytical and technical capability using real, messy, multi-gigabyte data.
+## ⭐ Summary — What This Project Demonstrates
 
-2. Apply a human-centered lens to understand how reporting behaviours, demographics, and neighbourhood context influence complaint patterns.
+This project showcases my ability to:
 
-The result is a dashboard that highlights borough-level trends, reporting delays, demographic disparities, and offense types in a format that is accessible to both technical users and non-technical audiences.
+- Analyse and model **multi-million-row datasets** using BigQuery SQL  
+- Engineer features that **reveal behaviour**, not just numbers  
+- Build decision-support dashboards using **Tableau**  
+- Transform noisy raw data into **clear operational insights**  
+- Apply **mixed-method thinking** grounded in community context  
 
-To build a performant dashboard suitable for Tableau Public, and paying attention to Tableau Public's size limitations, the dashboard uses summary tables generated in BiqQuery. The full processing of the raw 3GB dataset - including cleaning, partitioning, clustering, feature engineering, and aggregate - is fully documented in the SQL scripts in this repository. 
+It reflects analytics capability applied to a real-world public sector dataset.
 
-This repository contains:
+---
 
-- Full SQL scripts for data ingestion, cleaning, enrichment, and aggregation
+## 📌 Why This Matters — The Problem
 
-- Summary tables used for the interactive Tableau dashboard
+Police complaints tell more than where crime happens. They reveal:
 
-- Screenshots and documentation of the final analytical insights
+- **Who feels safe reporting**
+- **When communities are most at risk**
+- **How quickly incidents reach authorities**
 
-- A complete analytics case study demonstrating mid-level analytical capabilities
+However — reporting behaviour is uneven, timestamps are inconsistent, and raw records are **too large to analyse without robust engineering**.
 
-**Project Motivation** 
+NYC needs visibility into:
 
-Complaints to police departments do not only reflect criminal incidents — they also reveal patterns in community behaviour, access to reporting, response expectations, and social conditions. An inital exploratory visualisation (illustrated below) on the daily complaint trends showed sharp fluctuations in crime reporting, suggesting that:  
+> 🧩 *Who is affected, when, and why — to improve community safety decisions.*
 
-- certain days or hours may experience more crime
-
-- boroughs may differ significantly in complaint volume
-
-- reporting delays may vary by offense
-
-- demographic profiles may correlate with reporting behavior
-
-This raised a core analytical question:
-
-**What underlying patterns drive complaint behaviour across NYC, and how can these patterns inform public safety decision-making?**
+This **exploratory data analysis** reveals temporal + demographic reporting patterns that could strengthen resource planning across boroughs. The chart below illustrates monthly complaint patterns in different boroughs. 
 
 ![monthly_complaints](Images/Line_chart.jpeg)
 
-The above question prompted further inquiries into police complaints in NYC including; 
-- How do complaint volumes change overtime?
-- Why are certain days or hours more active?
-- Are some offences consistently reported late?
-- What demographics are most represented among victims?
-- Are specific boroughs driving the trend?
-- Where should resource allocation be prioritised? 
+---
 
-This project address these questions through a structured, multi-layed analysis.
+## 🎯 Objectives
 
-## 🛠 Tech Stack
+This project answers five operational questions:
 
-| Component | Technology |
-|:---|:---|
-| Data Warehouse | Google BigQuery | 
-| Data Cleaning & Feature Engineering | SQL (BigQuery Standard SQL) |
-| Dashboard | Tableau Public |
-| Version Control | Git + GitHub |
-| Cloud Storage | Google Cloud Storage |
+1. How do complaint volumes change over time and by borough?  
+2. Which offenses most drive police workload?  
+3. When are communities most at risk?  
+4. Which crimes experience delayed reporting — and where?  
+5. Who is most vulnerable based on demographic patterns?
 
+These insights connect **incident data** with **public safety strategy**.
 
+---
 
-**1. Data Pipeline & Processing (BigQuery)**
-**- Data ingestion**
+## 🧠 Tech Stack
 
-Raw CSV (≈3GB) stored in Google Cloud Storage and loaded into BigQuery. The dataset contained mixed formats, missing timestamps, inconsistent text fields, and coded values
+| Layer                         | Tools |
+|------------------------------|------|
+| Data Warehouse               | BigQuery (Partitioning + Clustering) |
+| Cleaning & Feature Engineering | SQL (standard functions, CASE, SAFE_CAST) |
+| Analytics & Visualisation    | Tableau Public |
+| Storage                      | Google Cloud Storage |
+| Versioning                  | Git + GitHub |
 
-**- Data cleaning + standardization**
+---
 
-. Converted date/time fields into unified timestamps
-. Trimmed and normalised text fields
-. Standardised victim/suspect demographic values
-. Reconstructed geography columns
-. Derived key date/time features:
+## 🔄 Data Pipeline Overview
 
-    complaint_year
-    complaint_month
-    complaint_dayofweek
-    complaint_hour
-    is_weekend
-    offense_severity
+Raw data: **~3GB NYPD complaint history (3 years)**  
+Loaded into BigQuery for scalable transformation.
 
- **Feature engineering**
-To prepare the dataset for reliable analysis and visualisation, several feature-engineering steps were performed in Bigquery. These steps ensure consistent categorisation across millions of records, reduce noise in the raw data, and enable clearer insights for downstream Tableau dashboards. These include: 
+### Key Engineering Components
 
-. Reporting lag calculation
-. Offense severity classification
-. Borough-level aggregation
-. High-frequency and low-frequency offense segmentation
-. Victim age-group normalisation
+| Step | Description | Value |
+|------|-------------|------|
+| Standardisation | Unified timestamps, normalized text fields | Prevent broken time trends |
+| Feature Engineering | Derived hour, day, season, severity, weekend flags | Enables behavioural insight |
+| Reporting Lag Correction | Removed negative/invalid delays | Accurate timeliness metrics |
+| Offense Segmentation | High vs low frequency categories | Focus on operationally relevant crime |
+| Victim Demographics | Normalised age groups | Clear vulnerability patterns |
+| Aggregation to Summary Tables | Pushdown processing → Tableau | Performance for rich visuals |
 
-**Reporting lag cleaning(fixing negative values)**
-The raw timestamps often produce negative reporting lags due to:
+⚠️ Note: Tableau Public size limits required optimisation to avoid degraded dashboard performance.
 
-. Partial or incorrect timestamps
+---
 
-. Administrative updates logged before incident timestamps
+## 📊 Dashboard Features
 
-.  Data entry delays
+🔗 Live dashboard:  
+https://public.tableau.com/app/profile/presca.evans/viz/NYPDComplaintsdata2/Dashboard22
 
-Two cleaning rules were applied:
+| Visual | What It Shows | Who It Helps |
+|-------|---------------|--------------|
+| Daily Trend Line | Demand over time | City leadership |
+| Top Offenses Bar | Drivers of police workload | Resource planners |
+| Hourly x Day Heatmap | Crime rhythms | Shift schedulers |
+| Reporting Lag Quadrants | Where reporting barriers exist | Community safety teams |
+| Victim Profiles | Population exposure | Equity & prevention programs |
 
-1. If the **reported timw was earlier than the incident time**, the record was discarded or labeled as "Unknown" because an incident cannot be reported before it happens
+Screenshots included in `Images` folder.
 
-2. I recalculated the median reporting delay for each offense category and borough, producing clean and realistic metrics for the Reporting Lag Quadrant Plot.
+---
 
-This produced clean, interpretable metrics for the Reporting Lag Quadrant Plot.
+## 🔍 Key Insights
 
+### 🚨 Crime follows social rhythms
+- **Evening + weekend surges** across boroughs  
+→ Staffing models could better align with community activity patterns.
 
-**High-Frequency and Low-Frequency Offense Segmentation**
+### 🏙 Brooklyn + Manhattan drive most reports
+- Highest volumes correlate with **population density + mobility**
 
-To better understand offense patterns across New York City, the dataset was segmented into high-frequency and low-frequency offense categories. This step was essential given the wide range of offense descriptions with highly uneven distribution.
+### 🕒 Some offenses are reported much later
+- Reporting lags differ by **borough + offense**
+- Indicates **access, trust, or logistical barriers**
 
-**Why segmentation was necessary**
+### 👥 Victims are predominantly adults 25–64
+- Reflects everyday civilian exposure
+- Men slightly over-represented in complaints
 
-NYPD complaint data contains dozens of offense categories. Without segmentation:
+### 🧭 Operational takeaway
+> **Patterns are predictable** → risk can be anticipated, not just reacted to.
 
-- Key trends become hidden in noise
-- Rare categories distort bar charts
-- Visualisations become overcrowded
-- Insights shift toward outliers instead of dominant patterns
+---
 
-Segmentation ensures the analysis **prioritises crime types with greatest operational impact**.
+## 🚀 Future Enhancements
 
-**How segmentation was performed**
+This project is built for further iteration. Next phase improvements:
 
-For each offense (offense description):
+| Category | Enhancement | Benefit |
+|---------|-------------|--------|
+| Geospatial Insight | Borough & precinct map layers | Place-based strategy |
+| Social Context | Integrate income, density, housing indicators | Understand *why* crime varies |
+| Temporal Modelling | Seasonality analysis & forecast trends | Proactive deployment |
+| Demographic Depth | Race × age × borough intersection | Targeted prevention |
+| Automation | Scripted refresh of BigQuery summary tables | Minimal maintenance |
+| Narratives | Borough-specific mini case studies | Human-centred storytelling |
 
-- Complaint totals were calculated
-- A percentile distribution was computed
-- The 75th percentile threshold classified offenses into:
-. High-frequency
-. Low-frequency
+My qualitative background strengthens interpretation — not just number crunching.
 
-This statistical approach avoids arbitrary filters and highlights operationally meaningful categories.
+---
 
-**How segmentation powered the “Top Offenses” visualisation**
+## 📂 Repository Structure
 
-The “Top Offenses” bar chart intentionally displays only high-frequency offenses.
-This ensures the visualisation focuses on categories that:
+nypd-complaints-analysis
+│
+├─ README.md
+├─ sql_scripts
+│ ├─ 01_ingest.sql
+│ ├─ 02_clean_transform.sql
+│ ├─ 03_feature_engineering.sql
+│ ├─ 04_summary_tables.sql
+│
+├─ data
+│ └─ summary_tables
+│
+└─ Images
+├─ Line_chart.jpeg
 
-- Drive police workload
-- Consistently appear across boroughs
-- Demonstrate actionable patterns
-- Inform resource allocation
 
-Rare offenses remain available in the dataset but are excluded from main visuals to maintain clarity and analytical relevance.
 
-**Victim Age Group Normalisation**
 
-The raw vic_age_group field contained a mixture of:
+---
 
-Exact ages (e.g., “18”, “25”, “47”)
+## 👤 Author — Dr. Presca Evans
 
-Ranges (e.g., “25-44”, “18-24”)
+Data Analyst • Mixed-Method Researcher • Public Service Insight  
+📍 Relocating to Brisbane QLD — January availability  
+💡 Focus: turning data into decisions that improve community outcomes
 
-Free text (e.g., “UNDER 18”, “65+”)
+---
 
-To create a single interpretable variable, the field was cleaned and recoded into standardised age buckets:
-<18  
-18–24  
-25–44  
-45–64  
-65+  
-Unknown
+*This project reflects my commitment to combining data analytics with human-centred insight to support safer, fairer cities.*
 
-This allowed the Victim profile chart to correctly stack and compare demographic patterns across boroughs, turning a noisy column into a usable analytical dimension.
-
-**Summary tables creation**
-
-The summary table was used for Tableau Public due to size limits
-
-. Daily complaint trends
-. Top offenses (recent 24 months)
-. Hourly/offense heatmap matrix
-. Reporting lag statistics (borough + offense)
-. Victim demographic profiles
-
-All summary tables are stored in data/summary_tables/
-
-**2. Interactive Tableau Dashboard**
- Live dashboard: [https://public.tableau.com/app/profile/presca.evans/viz/NYPDComplaintsdata2/Dashboard22]
-
-The dashboard features:
-
-**a. Daily Complaint Trend**
-- Continuous line chart showing long-term complaints (see chart above)
-
-**b. Top Offences Bar Chart**
-- Focuses on high-volume crime categories
-- Helps prioritise policing and resource allocation
-
-
-
-**c. Hourly-Day Heatmap**
-- Reveals "crime activity hotspots" by time of day
-- Useful for shift planning and operational readiness
-
-Darker colours indicate peak complaint activity
-
-
-**d. Reporting Lag Plot**
-This analytical visualisation shows:
-- Fast vs. slow reporting
-- High vs. low complaints volume
-- Borough-offence pairings
-Colour-coded quandrants reveal operational risk zones. 
-
-
-**e. Victim Demographic Profile**
-- Age group distribution
-- Gender distribution
-- Helps identify vulnerable population
-
-
-
-
-
-**3. Key Insights From the Analysis**
-
-. **Clear weekend and evening surges** were visible across all boroughs, suggesting that community activity patterns — rather than isolated events — strongly influence when complaints are filed.
-
-. **Assault, harassment, and grand larceny** consistently make up the highest share of reported offenses, pointing to recurring interpersonal and property-related concerns within NYC neighborhoods.
-
-. **Reporting delays vary by borough**, with some areas showing slower reporting times around higher-severity offenses. This may reflect differences in access, community-police relationships, or logistical barriers to reporting.
-
-. **Adults between 25–64 represent the majority of victims**, with men appearing more frequently in the dataset. This reinforces known demographic exposure patterns but also highlights who is most affected in daily urban environments.
-
-. **Brooklyn recorded the highest volume of complaints between 2022 and 2024**, closely followed by Manhattan. The distribution mirrors both population density and patterns of public mobility across boroughs.
-
-. **Complaint volume and reporting speed differ substantially by offense type** Certain crimes tend to be reported immediately, while others have longer lags — offering opportunities to better understand barriers to timely reporting.
-
-. **Temporal rhythms are strong predictors of complaint activity** Distinct patterns emerge by hour, day of the week, and season, demonstrating how community routines shape reporting behaviour.
-
-
-These insights would help:
-
-- Police departments schedule resources
-
-- Community programs target interventions
-
-- Policymakers understand reporting barriers
-
-
-**4. Future Enhancements**
-
-As I continue strengthening my data analytics skills, there are several improvements I plan to explore in future iterations of this project:
-
-. **Expand the analysis with a borough map:**
-Add a clean geospatial component that shows complaint density and severity patterns across NYC, enabling easier place-based storytelling.
-
-. **Integrate neighbourhood-level social indicators:**
-Combine complaint trends with contextual factors such as population density, age distribution, median income, or housing statistics to bring a more human-centered, social-science perspective to the findings.
-
-. **Deepen temporal analysis:**
-Explore weekday vs. weekend patterns, seasonal trends, and month-to-month changes to understand how community rhythms influence reported incidents.
-
-. **Enhance victim demographics profiles:**
-Add clearer categories for victim race, gender, and age to show disparities or protections needs across communities.
-
-. **Improve data refresh process:**
-Move from manual table creation to semi-automated BigQuery SQL scripts, so the summary tables used in Tableau update more efficiently over time.
-
-. **Develop borough-level narratives:**
-Use insights from the dashboard to craft short, data-informed case studies on how crime patterns differ by borough—leveraging my background in social sciences.
-
-. **Explore predictive indicators (lightweight):**
-Experiment with simple trend projections for future complaint volumes (e.g., using rolling averages), without requiring advanced machine-learning models.
+---
