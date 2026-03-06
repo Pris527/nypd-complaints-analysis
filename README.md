@@ -1,174 +1,334 @@
-# NYPD Complaints Analysis — Data Insights for Public Safety
-**Using BigQuery and Tableau to reveal temporal, spatial, and behavioural patterns in NYC police reporting**
+# NYC Complaint Reporting Visibility Pack
+A **Reporting BA-style** visibility pack using **public NYC complaint data** to surface **demand patterns**, **workload drivers**, and **reporting-timeliness signals** that support operational planning and prevention discussions.
 
 ---
 
-## ⭐ Summary — What This Project Demonstrates
-
-This project showcases my ability to:
-
-- Analyse and model **multi-million-row datasets** using BigQuery SQL  
-- Engineer features that **reveal behaviour**, not just numbers  
-- Build decision-support dashboards using **Tableau**  
-- Transform noisy raw data into **clear operational insights**  
-- Apply **mixed-method thinking** grounded in community context  
-
-It reflects analytics capability applied to a real-world public sector dataset.
+## 👩🏽‍💻 Author
+**Presca Wanki** — **Service Performance & Insights Analyst (Reporting BA-style)**  
+Focus: KPI definition, reporting requirements, data validation, and decision-ready insight for operational planning.
 
 ---
 
-## 📌 Why This Matters — The Problem
+## ✅ At a glance
+- **Primary decisions**
+  - When do complaint volumes peak for shift and resource planning?
+  - Which offence categories drive the largest share of workload?
+  - Where do reporting-timeliness patterns suggest visibility gaps worth further review?
+- **Primary users**
+  - Public safety performance / insights teams
+  - Borough-level operations and resource planning teams
+  - Community safety stakeholders seeking high-level visibility
+- **Tooling:** **BigQuery (SQL)** → **Tableau** → **GitHub documentation**
+- **Deliverables:** Reporting requirements, KPI glossary, validation rules, dashboard views, decision-ready insights, and planning-oriented actions
 
-Police complaints tell more than where crime happens. They reveal:
+**📊 Tableau Public dashboard:**  
+[NYC Complaints Dashboard](https://public.tableau.com/app/profile/presca.evans/viz/NYPDComplaintsdata2/Dashboard22)
 
-- **Who feels safe reporting**
-- **When communities are most at risk**
-- **How quickly incidents reach authorities**
-
-However — reporting behaviour is uneven, timestamps are inconsistent, and raw records are **too large to analyse without robust engineering**.
-
-NYC needs visibility into:
-
-> 🧩 *Who is affected, when, and why — to improve community safety decisions.*
-
-This **exploratory data analysis** reveals temporal + demographic reporting patterns that could strengthen resource planning across boroughs. The chart below illustrates monthly complaint patterns in different boroughs. 
-
-![monthly_complaints](Images/Line_chart.jpeg)
-
----
-
-## 🎯 Objectives
-
-This project answers five operational questions:
-
-1. How do complaint volumes change over time and by borough?  
-2. Which offenses most drive police workload?  
-3. When are communities most at risk?  
-4. Which crimes experience delayed reporting — and where?  
-5. Who is most vulnerable based on demographic patterns?
-
-These insights connect **incident data** with **public safety strategy**.
+> **Data note:** Uses publicly available NYC complaint data. Outputs are presented at an aggregated level for analysis and planning.
 
 ---
 
-## 🧠 Tech Stack
-
-| Layer                         | Tools |
-|------------------------------|------|
-| Data Warehouse               | BigQuery (Partitioning + Clustering) |
-| Cleaning & Feature Engineering | SQL (standard functions, CASE, SAFE_CAST) |
-| Analytics & Visualisation    | Tableau Public |
-| Storage                      | Google Cloud Storage |
-| Versioning                  | Git + GitHub |
+## 🧩 What this project demonstrates
+- **Reporting requirements definition** using user stories and acceptance criteria
+- **KPI design and business rules** including reporting-timeliness logic
+- **Data-quality governance** through timestamp standardisation, category normalisation, and invalid-value handling
+- **Decision-oriented dashboarding** focused on action, not just charts
+- **Interpretation discipline** through clear caveats on reporting bias and non-causality
 
 ---
 
-## 🔄 Data Pipeline Overview
+## 🔎 Project overview
+Complaint data provides a practical view of **reported service demand** and how it varies across time and geography. However, raw records often include inconsistent timestamps, missing fields, and large volumes that require transformation before they can support operational decisions.
 
-Raw data: **~3GB NYPD complaint history (3 years)**  
-Loaded into BigQuery for scalable transformation.
+This reporting pack is designed to answer five core questions:
 
-### Key Engineering Components
+1. **How do complaint volumes change over time and by borough?**
+2. **Which offence categories drive the largest share of reported workload?**
+3. **When do repeatable peaks occur that matter for planning?**
+4. **Where do reporting-timeliness patterns vary by borough or offence category?**
+5. **What high-level reported exposure patterns appear in available profile fields, with appropriate caveats?**
 
-| Step | Description | Value |
-|------|-------------|------|
-| Standardisation | Unified timestamps, normalized text fields | Prevent broken time trends |
-| Feature Engineering | Derived hour, day, season, severity, weekend flags | Enables behavioural insight |
-| Reporting Lag Correction | Removed negative/invalid delays | Accurate timeliness metrics |
-| Offense Segmentation | High vs low frequency categories | Focus on operationally relevant crime |
-| Victim Demographics | Normalised age groups | Clear vulnerability patterns |
-| Aggregation to Summary Tables | Pushdown processing → Tableau | Performance for rich visuals |
+Rather than treating complaint records as direct evidence of total prevalence, this project treats them as a **reported-demand and visibility dataset** that can support planning discussions when interpreted carefully.
 
-⚠️ Note: Tableau Public size limits required optimisation to avoid degraded dashboard performance.
+> **Ethics and scope note:** This is **not** a predictive policing tool and does **not** claim causality. Complaint data is shaped by **reporting behaviour, access, trust, and timing**. This pack is designed for **visibility, reporting, and planning** — not enforcement targeting.
 
 ---
 
-## 📊 Dashboard Features
+## 👥 Primary users
 
-🔗 Live dashboard:  
-https://public.tableau.com/app/profile/presca.evans/viz/NYPDComplaintsdata2/Dashboard22
+This reporting pack is designed for stakeholders who need a structured view of **reported complaint demand**, **timeliness**, and **workload concentration**.
 
-| Visual | What It Shows | Who It Helps |
-|-------|---------------|--------------|
-| Daily Trend Line | Demand over time | City leadership |
-| Top Offenses Bar | Drivers of police workload | Resource planners |
-| Hourly x Day Heatmap | Crime rhythms | Shift schedulers |
-| Reporting Lag Quadrants | Where reporting barriers exist | Community safety teams |
-| Victim Profiles | Population exposure | Equity & prevention programs |
+### Public safety performance / insights teams
+- Monitor complaint trends over time
+- Identify repeatable workload patterns
+- Support consistent reporting and planning discussions
 
-Screenshots included in `Images` folder.
+### Borough-level operations and resource planning teams
+- Review peak demand windows for staffing and shift planning
+- Track high-volume offence categories as workload drivers
+- Use timeliness patterns as an input for further operational review
 
----
+### Community safety stakeholders
+- Understand high-level reported incident patterns
+- Support prevention and outreach discussions using aggregated views
+- Interpret findings with clear reporting-bias caveats
 
-## 🔍 Key Insights
-
-### 🚨 Crime follows social rhythms
-- **Evening + weekend surges** across boroughs  
-→ Staffing models could better align with community activity patterns.
-
-### 🏙 Brooklyn + Manhattan drive most reports
-- Highest volumes correlate with **population density + mobility**
-
-### 🕒 Some offenses are reported much later
-- Reporting lags differ by **borough + offense**
-- Indicates **access, trust, or logistical barriers**
-
-### 👥 Victims are predominantly adults 25–64
-- Reflects everyday civilian exposure
-- Men slightly over-represented in complaints
-
-### 🧭 Operational takeaway
-> **Patterns are predictable** → risk can be anticipated, not just reacted to.
+> **Out of scope:** This project is not designed for predictive policing, enforcement targeting, or causal claims about crime occurrence.
 
 ---
 
-## 🚀 Future Enhancements
-
-This project is built for further iteration. Next phase improvements:
-
-| Category | Enhancement | Benefit |
-|---------|-------------|--------|
-| Geospatial Insight | Borough & precinct map layers | Place-based strategy |
-| Social Context | Integrate income, density, housing indicators | Understand *why* crime varies |
-| Temporal Modelling | Seasonality analysis & forecast trends | Proactive deployment |
-| Demographic Depth | Race × age × borough intersection | Targeted prevention |
-| Automation | Scripted refresh of BigQuery summary tables | Minimal maintenance |
-| Narratives | Borough-specific mini case studies | Human-centred storytelling |
-
-My qualitative background strengthens interpretation — not just number crunching.
+## 📌 Decisions this pack supports
+- Aligning staffing and operational attention to **repeatable peak windows**
+- Prioritising review of **high-volume offence categories**
+- Flagging borough/offence combinations with **unusual reporting-timeliness patterns**
+- Strengthening reporting consistency and metric transparency
+- Supporting high-level prevention discussions using aggregated, caveated insights
 
 ---
 
-## 📂 Repository Structure
+## 🧱 Delivery approach (Requirements → KPI rules → validated model → dashboard)
 
-nypd-complaints-analysis
-│
-├─ README.md
-├─ sql_scripts
-│ ├─ 01_ingest.sql
-│ ├─ 02_clean_transform.sql
-│ ├─ 03_feature_engineering.sql
-│ ├─ 04_summary_tables.sql
-│
-├─ data
-│ └─ summary_tables
-│
-└─ Images
-├─ Line_chart.jpeg
+This project follows a **reporting delivery pattern**:
 
-
-
+1. Define decision needs  
+2. Define KPI rules and reporting logic  
+3. Validate completeness, missingness, and exclusions  
+4. Publish dashboard views that support action
 
 ---
 
-## 👤 Author — Dr. Presca Evans
+## 1) Reporting requirements (user stories + acceptance criteria)
 
-Data Analyst • Mixed-Method Researcher • Public Service Insight  
-📍 Relocating to Brisbane QLD — January availability  
-💡 Focus: turning data into decisions that improve community outcomes
+### User story 1 — Trend visibility (demand over time)
+**As a public safety performance lead,** I need complaint volume trends by borough over time so I can identify sustained increases, seasonality, and planning signals.
+
+**Acceptance criteria**
+- Trend view supports borough filtering or comparison
+- Time grain is clearly labelled (for example, daily or monthly)
+- Records with invalid or missing dates are excluded from time-series KPIs and handled transparently
+
+![Trend line](Images/Line_chart.jpeg)
 
 ---
 
-*This project reflects my commitment to combining data analytics with human-centred insight to support safer, fairer cities.*
+### User story 2 — Workload drivers (top offences)
+**As an operations planner,** I need to identify the highest-volume offence categories so I can prioritise workload drivers for planning and prevention discussions.
+
+**Acceptance criteria**
+- Offence labels are standardised and normalised
+- Top offences update with borough and time filters where available
+- Dashboard clarifies this is **volume-based**, not severity-based, unless a severity rule is explicitly defined
+
+![Top offences](Images/Top_Offences.jpeg)
 
 ---
+
+### User story 3 — Peak windows (hour × day rhythms)
+**As a shift scheduler,** I need an hour-by-day view of complaint volumes so I can align staffing to repeatable peak windows.
+
+**Acceptance criteria**
+- Heatmap uses derived hour and day-of-week fields from standardised timestamps
+- Weekend and weekday patterns are visible and comparable
+- Filters apply consistently to the heatmap and related views
+
+![Complaint heatmap](Images/Complaint_heatmap.jpeg)
+
+---
+
+### User story 4 — Reporting timeliness
+**As a community safety or performance lead,** I need reporting-timeliness insights so I can identify where delayed reporting patterns may warrant deeper review.
+
+**Acceptance criteria**
+- Reporting timeliness is defined as **Report Date − Occurrence Date (days)**
+- Negative or invalid lags are treated as data errors, excluded, and documented
+- Timeliness is viewable by borough and offence category where available
+- Dashboard includes a caveat that timeliness is an **indicator**, not proof of cause
+
+![Reporting lag](Images/Reporting_time.jpeg)
+
+---
+
+### User story 5 — Reported exposure profile (high-level)
+**As a prevention or outreach stakeholder,** I need a high-level view of available reported exposure patterns to support discussion of prevention focus areas, with clear caveats.
+
+**Acceptance criteria**
+- Profile fields are presented as grouped categories where appropriate
+- Unknown or missing values remain visible
+- Dashboard includes a reporting-bias caveat: data reflects **reported incidents**, not total prevalence
+
+![Reported exposure profile](Images/Victim_profile.jpeg)
+
+---
+
+### User story 6 — Data trust (transparency)
+**As a reporting BA,** I need clear data-quality rules so stakeholders understand what is included, excluded, and standardised before relying on the metrics.
+
+**Acceptance criteria**
+- Timestamp parsing and standardisation rules are documented
+- Invalid or negative reporting-timeliness values are documented
+- Summary outputs reconcile to dashboard totals for the same filter set
+- “Unknown” categories remain visible for transparency
+
+---
+
+## 2) KPI glossary (definitions & business rules)
+
+| KPI / concept | Definition | Unit | Rules / caveats |
+|---|---|---:|---|
+| Total complaints | Count of complaint records | Count | Reflects reported incidents in the dataset, not per-capita prevalence |
+| Complaints by borough | Complaint count grouped by borough | Count | Borough labels standardised where needed |
+| Top offences | Highest-volume offence categories | Count | Offence labels normalised |
+| Peak window | Highest-volume periods by hour/day | Time band | Derived from standardised timestamps |
+| Reporting timeliness (days) | Report Date − Occurrence Date | Days | Negative or invalid values excluded as data errors |
+| Delayed reporting (optional) | Timeliness above a defined threshold (e.g. 7+ days) | % / Count | Threshold must be stated if used |
+| Profile category | Grouped demographic/profile field | Category | Unknown or missing values retained and visible |
+
+---
+
+## Limitations & assumptions
+- Complaint data reflects **reported incidents only** and is influenced by reporting behaviour, access, trust, and timing.
+- Volume patterns should not be interpreted as total prevalence or direct enforcement need.
+- Reporting timeliness is a **visibility indicator**, not evidence of cause.
+- Profile fields may be incomplete and should be interpreted only at a **high, descriptive level**.
+- Findings are intended for **planning, reporting, and visibility**, not predictive or causal use.
+
+---
+
+## 3) Data validation & quality handling (trust in the numbers)
+
+### Principles
+- Standardise timestamps to protect trend accuracy
+- Keep missingness visible
+- Remove invalid timeliness values to protect KPI integrity
+- Use summary outputs to keep Tableau performant
+
+### Handling approach
+
+| Risk area | Handling approach |
+|---|---|
+| Inconsistent timestamps | Standardised parsing and formatting before deriving hour/day fields |
+| Text/category inconsistencies | Normalised key labels such as offence categories and boroughs |
+| Negative/invalid reporting timeliness | Excluded and documented as data errors |
+| Missing profile fields | Retained as Unknown/Null where relevant |
+| Dashboard performance limits | Aggregated summary outputs used for visuals |
+
+### Validation checks
+- KPI totals reconcile between summary outputs and dashboard views for the same filters
+- Reporting-timeliness values are non-negative after cleaning
+- Hour/day fields are derived only from valid timestamps
+- Unknown profile categories remain visible and are not silently dropped
+
+---
+
+## 4) Build & implementation (BigQuery → Tableau)
+
+### Tech stack
+
+| Component | Tool |
+|---|---|
+| Cloud data warehouse | Google BigQuery (SQL) |
+| Visualisation / BI | Tableau Public |
+| Version control | GitHub |
+| Documentation | README.md |
+
+### Implementation summary
+1. Load raw complaint data into **BigQuery**
+2. Clean and standardise timestamps and key categorical fields
+3. Derive reporting features such as hour/day, offence groupings, reporting timeliness, and grouped profile fields
+4. Generate summary outputs for Tableau performance
+
+### SQL scripts (in order)
+- `SQL Scripts/01_cleaning.sql`
+- `SQL Scripts/02_summary_daily.sql`
+- `SQL Scripts/03_summary_offences.sql`
+- `SQL Scripts/04_summary_heatmap.sql`
+- `SQL Scripts/05_reporting_time_lag.sql`
+- `SQL Scripts/06_victim_profile_high.sql`
+
+---
+
+## 🌍 Key visuals (what to look for)
+
+### 1) Trend line
+**Look for:** sustained changes, borough differences, and possible seasonality signals  
+![Trend line](Images/Line_chart.jpeg)
+
+---
+
+### 2) Top offences
+**Look for:** the offence categories driving the largest share of reported workload  
+![Top offences](Images/Top_Offences.jpeg)
+
+---
+
+### 3) Complaint heatmap
+**Look for:** repeatable peak windows by hour and day  
+![Complaint heatmap](Images/Complaint_heatmap.jpeg)
+
+---
+
+### 4) Reporting timeliness
+**Look for:** variation in time-to-report patterns across boroughs or offence categories  
+![Reporting lag](Images/Reporting_time.jpeg)
+
+---
+
+### 5) Reported exposure profile
+**Look for:** high-level reported profile patterns, interpreted cautiously and descriptively  
+![Reported exposure profile](Images/Victim_profile.jpeg)
+
+---
+
+## 📌 Key insights (decision-ready)
+- **Complaints show repeatable rhythms** that can inform staffing and planning decisions.
+- **Workload concentrates in a limited set of offence categories**, supporting prioritisation of the largest reported drivers.
+- **Reporting timeliness varies by borough and offence category**, suggesting areas where visibility or access issues may warrant deeper review.
+- **High-level profile views can support prevention discussions**, but only with clear acknowledgement of reporting bias and incomplete coverage.
+
+---
+
+## ✅ Recommended actions (planning-oriented)
+
+| Theme | Action | Expected benefit | Success measure |
+|---|---|---|---|
+| Shift planning | Align staffing attention to repeatable hour/day demand patterns | Better preparedness during predictable surges | Peak-period demand coverage improves |
+| Workload focus | Prioritise review of highest-volume offence categories | Focus effort on largest reported drivers | Consistent monitoring of top categories |
+| Timeliness review | Review borough/offence areas with elevated reporting timeliness | Better understanding of visibility frictions | Timeliness distribution becomes more stable over time |
+| Reporting governance | Maintain KPI glossary and validation rules | More consistent interpretation and trusted reporting | Fewer metric disputes; stable reporting cadence |
+
+---
+
+## 🚀 Future enhancements
+- Add precinct-level geospatial views where appropriate and ethically justified
+- Integrate contextual datasets with clear ethical framing
+- Add seasonality modelling for planning support
+- Create borough-specific mini packs for follow-up review
+- Automate refresh of BigQuery summary outputs for lower-maintenance reporting
+
+---
+
+## 📁 Repository structure
+
+```text
+nypd-complaints-analysis/
+├── README.md
+├── LICENSE
+├── Data/
+│   ├── reporting_time_lag.csv
+│   ├── summary_daily.csv
+│   ├── summary_heatmap.csv
+│   ├── summary_offences.csv
+│   └── summary_victim_profile_high.csv
+├── Images/
+│   ├── Complaint_heatmap.jpeg
+│   ├── Line_chart.jpeg
+│   ├── Reporting_time.jpeg
+│   ├── Top_Offences.jpeg
+│   └── Victim_profile.jpeg
+└── SQL Scripts/
+    ├── 01_cleaning.sql
+    ├── 02_summary_daily.sql
+    ├── 03_summary_offences.sql
+    ├── 04_summary_heatmap.sql
+    ├── 05_reporting_time_lag.sql
+    └── 06_victim_profile_high.sql
